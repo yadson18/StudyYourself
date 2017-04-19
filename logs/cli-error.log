@@ -1,0 +1,27 @@
+2017-04-03 15:02:49 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php on line 47
+Stack Trace:
+#0 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'my_app', 'secret', Array)
+#1 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(367): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(386): Cake\Database\Connection->getSchemaCollection()
+#8 /home/yadson/cakePHP/studyYourself/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(959): Cake\Database\Connection->schemaCollection()
+#9 /home/yadson/cakePHP/studyYourself/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(911): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 /home/yadson/cakePHP/studyYourself/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(207): Bake\Shell\Task\ModelTask->listAll()
+#11 /home/yadson/cakePHP/studyYourself/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#12 /home/yadson/cakePHP/studyYourself/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#13 /home/yadson/cakePHP/studyYourself/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Users')
+#14 /home/yadson/cakePHP/studyYourself/vendor/cakephp/bake/src/Shell/BakeShell.php(260): Bake\Shell\Task\ModelTask->main('Users')
+#15 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Users', 0)
+#16 /home/yadson/cakePHP/studyYourself/vendor/cakephp/bake/src/Shell/BakeShell.php(263): Cake\Collection\Collection->each(Object(Closure))
+#17 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Console/Shell.php(458): Bake\Shell\BakeShell->all('Users')
+#18 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#20 /home/yadson/cakePHP/studyYourself/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#21 /home/yadson/cakePHP/studyYourself/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#22 {main}
+
+
