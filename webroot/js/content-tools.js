@@ -5647,6 +5647,24 @@
 
     ComponentUI.prototype._removeDOMEventListeners = function() {};
 
+    ComponentUI.createNav = function(classNames, attributes, content) {
+      var domElement, name, value;
+      domElement = document.createElement('Nav');
+      if (classNames && classNames.length > 0) {
+        domElement.setAttribute('class', classNames.join(' '));
+      }
+      if (attributes) {
+        for (name in attributes) {
+          value = attributes[name];
+          domElement.setAttribute(name, value);
+        }
+      }
+      if (content) {
+        domElement.innerHTML = content;
+      }
+      return domElement;
+    };
+
     ComponentUI.createUl = function(classNames, attributes, content) {
       var domElement, name, value;
       domElement = document.createElement('Ul');
@@ -5912,15 +5930,15 @@
 
     IgnitionUI.prototype.mount = function() {
       IgnitionUI.__super__.mount.call(this);
-      this._domElement = this.constructor.createDiv(['ct-widget', 'ct-ignition', 'ct-ignition--ready']);
+      this._domElement = this.constructor.createUl(['ct-widget', 'ct-ignition', 'ct-ignition--ready']);
       this.parent().domElement().appendChild(this._domElement);
-      this._domEdit = this.constructor.createDiv(['ct-ignition__button', 'ct-ignition__button--edit']);
+      this._domEdit = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--edit']);
       this._domElement.appendChild(this._domEdit);
-      this._domConfirm = this.constructor.createDiv(['ct-ignition__button', 'ct-ignition__button--confirm']);
+      this._domConfirm = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--confirm']);
       this._domElement.appendChild(this._domConfirm);
-      this._domCancel = this.constructor.createDiv(['ct-ignition__button', 'ct-ignition__button--cancel']);
+      this._domCancel = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--cancel']);
       this._domElement.appendChild(this._domCancel);
-      this._domBusy = this.constructor.createDiv(['ct-ignition__button', 'ct-ignition__button--busy']);
+      this._domBusy = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--busy']);
       this._domElement.appendChild(this._domBusy);
       return this._addDOMEventListeners();
     };
@@ -6312,7 +6330,7 @@
     };
 
     ToolboxUI.prototype.tools = function(tools) {
-      var domToolGroup, i, tool, toolGroup, toolName, toolUI, _i, _len, _ref, _ref1, _results;
+      var domToolGroup, actions, i, tool, toolGroup, toolName, toolUI, _i, _len, _ref, _ref1, _results;
       if (tools === void 0) {
         return this._tools;
       }
@@ -6331,29 +6349,33 @@
       }
       _ref1 = this._tools;
       _results = [];
+      
+      this._nav = this.constructor.createNav(['menu']);
+      this._nav.setAttribute('role', 'navigation');
+      this._domToolGroups.appendChild(this._nav);
       domToolGroup = this.constructor.createUl(['ct-tool-group']);
-        
+      var _j, _len1, _results1, _results2;
+      _results1 = [];      
+      _results2 = [];                                                           
+
       for (i = _i = 0, _len = _ref1.length; _i < _len; i = ++_i) {
         toolGroup = _ref1[i];
-        this._domToolGroups.appendChild(domToolGroup);
+        this._nav.appendChild(domToolGroup);
         _results.push((function() {
-          var _j, _len1, _results1;
-          _results1 = [];
           for (_j = 0, _len1 = toolGroup.length; _j < _len1; _j++) {
             toolName = toolGroup[_j];
             tool = ContentTools.ToolShelf.fetch(toolName);
             this._toolUIs[toolName] = new ContentTools.ToolUI(tool);
             this._toolUIs[toolName].mount(domToolGroup);
             this._toolUIs[toolName].disabled(true);
-            console.log(this._toolUIs[toolName]);
               
-            _results1.push(this._toolUIs[toolName].addEventListener('applied', (function(_this) {
+            _results2.push(this._toolUIs[toolName].addEventListener('applied', (function(_this) {
               return function() {
                 return _this.updateTools();
               };
             })(this)));
           }
-          return _results1;
+          return _results1 + _results2;
         }).call(this));
       }
       return _results;
@@ -6597,6 +6619,18 @@
       this._domElement.setAttribute('data-ct-tooltip', ContentEdit._(this.tool.label));
       return ToolUI.__super__.mount.call(this, domParent, before);
     };
+
+
+    ToolUI.prototype.mountActions = function(domParent, index, before) {
+      var options = ['edit', 'confirm', 'cancel', 'busy'];
+      if (before == null) {
+        before = null;
+      }
+      this._domElement = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--' + options[index]]);
+      return ToolUI.__super__.mount.call(this, domParent, before);
+    };
+
+
 
     ToolUI.prototype.update = function(element, selection) {
       if (this.tool.requiresElement) {
@@ -8275,7 +8309,7 @@
 
     _EditorApp.prototype.mount = function() {
       this._domElement = this.constructor.createDiv(['ct-app']);
-      document['all'][38].insertBefore(this._domElement, null);
+      document['all']['menu-editor'].insertBefore(this._domElement, null);
       return this._addDOMEventListeners();
     };
 

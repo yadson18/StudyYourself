@@ -3,10 +3,8 @@
 
   ImageUploader = (function() {
     ImageUploader.imagePath = 'image.png';
-    console.log(ImageUploader.imagePath);
-    console.log(ImageUploader);
     if (typeof file != "undefined") {
-      console.log(file);
+      //console.log(file);
     }
 
     ImageUploader.imageSize = [600, 174];
@@ -150,18 +148,24 @@
     editor.init('[data-editable], [data-fixture]', 'data-name');
     editor.addEventListener('saved', function(ev) {
       var saved;
-      console.log(ev.detail().regions);
       if (Object.keys(ev.detail().regions).length === 0) {
         return;
       }
       editor.busy(true);
-      saved = (function(_this) {
-        return function() {
-          editor.busy(false);
-          return new ContentTools.FlashUI('ok');
-        };
-      })(this);
-      return setTimeout(saved, 2000);
+      var materials = ev.detail().regions.content;
+      $.post("/materials/add", { materialPage:  materials}, 
+        function(datas, success){ 
+          if(success){
+            saved = (function(_this) {
+              return function() {
+                editor.busy(false);
+                return new ContentTools.FlashUI('ok');
+              };
+            })(this);
+            return setTimeout(saved, 2000);
+          }
+        }
+      );
     });
     FIXTURE_TOOLS = [['undo', 'redo', 'remove']];
     ContentEdit.Root.get().bind('focus', function(element) {

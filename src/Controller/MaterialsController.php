@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * Materials Controller
@@ -19,12 +20,13 @@ class MaterialsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Users']
+            'contain' => ['Users', 'Pages']
         ];
         $materials = $this->paginate($this->Materials);
 
-        $this->set(compact('materials'));
-        $this->set('_serialize', ['materials']);
+        $role = $this->Auth->user('role');
+        $this->set(compact('materials', 'role'));
+        $this->set('_serialize', ['materials', 'role']);
     }
 
     /**
@@ -50,21 +52,24 @@ class MaterialsController extends AppController
      * @return \Cake\Network\Response|null Redirects on successful add, renders view otherwise.
      */
     public function add()
-    {
+    {   
         $material = $this->Materials->newEntity();
-        if ($this->request->is('post')) {
-            $material->user_id = $this->Auth->user('id');
-            $material = $this->Materials->patchEntity($material, $this->request->getData());
-            if ($this->Materials->save($material)) {
-                $this->Flash->success(__('The material has been saved.'));
+        $page = TableRegistry::get('Pages')->newEntity();
 
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The material could not be saved. Please, try again.'));
+        if ($this->request->is('post')) {
+            $material->title = "Test";
+            $material->user_id = $this->Auth->user('id');
+
+            if ($this->Materials->save($material)) {
+                $page->data = $_POST["materialPage"];
+                $page->material_id = $material->id;
+                TableRegistry::get('Pages')->save($page);
+            }  
         }
         $users = $this->Materials->Users->find('list', ['limit' => 200]);
-        $this->set(compact('material', 'users'));
-        $this->set('_serialize', ['material']);
+        $role = $this->Auth->user('role');
+        $this->set(compact('material', 'users', 'page', 'role'));
+        $this->set('_serialize', ['material', 'page', 'role']);
     }
 
     /**
@@ -89,8 +94,9 @@ class MaterialsController extends AppController
             $this->Flash->error(__('The material could not be saved. Please, try again.'));
         }
         $users = $this->Materials->Users->find('list', ['limit' => 200]);
-        $this->set(compact('material', 'users'));
-        $this->set('_serialize', ['material']);
+        $role = $this->Auth->user('role');
+        $this->set(compact('material', 'users', 'role'));
+        $this->set('_serialize', ['material', 'role']);
     }
 
     /**
@@ -111,5 +117,17 @@ class MaterialsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function myMaterial()
+    {
+        $this->paginate = [
+            'contain' => ['Users', 'Pages']
+        ];
+        
+        $materials = $this->paginate($this->Materials->findByUserId($this->Auth->user('id')));
+        $role = $this->Auth->user('role');
+        $this->set(compact('materials', 'role'));
+        $this->set('_serialize', ['materials', 'role']);
     }
 }

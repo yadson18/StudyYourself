@@ -1125,10 +1125,10 @@
     display: block
 }
 .ct-widget .ct-ignition__button {
-    border-radius: 24px;
+    /* border-radius: 24px; */
     content: '';
     cursor: pointer;
-    display: block;
+    display: inline;
     height: 48px;
     line-height: 48px;
     opacity: .9;
@@ -1138,12 +1138,12 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    font-variant: normal;
-    speak: none;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased;
+    /* font-variant: normal; */
+    /* speak: none; */
+    /* text-transform: none; */
+    /* -webkit-font-smoothing: antialiased; */
     -moz-osx-font-smoothing: grayscale;
-    width: 48px
+    width: 48px;
 }
 .ct-widget .ct-ignition__button:before {
     color: #fff
@@ -1198,11 +1198,11 @@
 .ct-widget .ct-ignition__button--edit:hover {
     background: #2e8ece
 }
-.ct-widget .ct-ignition__button--edit:hover:before {
+/*.ct-widget .ct-ignition__button--edit:hover:before {
     display: inline-block;
     -webkit-transform: rotate(-15deg);
     transform: rotate(-15deg)
-}
+}*/
 .ct-widget.ct-inspector {
     background: hsla(0, 0%, 91%, .2);
     border-top: 1px solid hsla(0, 0%, 100%, .1);
@@ -1486,7 +1486,6 @@
 }
 .ct-widget.ct-toolbox {
     background: hsla(0, 0%, 91%, .9);
-    border: 1px solid hsla(0, 0%, 100%, .5);
     box-shadow: 0 3px 3px rgba(0, 0, 0, .35);
     width: 100%
 }
@@ -1494,17 +1493,22 @@
     padding: 8px 0
 }
 .ct-widget .ct-tool-group {
-    padding: 4px 0
-}
-.ct-widget .ct-tool-groups ul {
-    margin-left: 0;
-    padding: 0px 0px 15px 0px;
+    margin-bottom: 0;
+    width: 55%;
+    margin: auto;
 }
 #editor #content-editor{
-    height: 300px;
     border: solid 1px;
     padding: 6px;
+    position: sticky;
+    top: 137px;
+    left: 21%;
+    width: 58%;
 }
+.menu{
+    padding: 10px;
+}
+
 content-editor
 .ct-widget .ct-tool-group:first-child {
     padding-top: 0
@@ -1512,11 +1516,8 @@ content-editor
 .ct-widget .ct-tool {
     color: #464646;
     cursor: pointer;
-    float: left;
-    height: 32px;
-    margin: 4px;
-    margin-right: 4px;
-    position: relative;
+    margin: 6px;
+    display: inline;
     text-align: center;
     font-family: icon;
     font-size: 16px;
@@ -1566,7 +1567,7 @@ content-editor
     transition-delay: 2s
 }
 .ct-widget .ct-tool:before {
-    line-height: 32px
+    line-height: 28px
 }
 .ct-widget .ct-tool:nth-child(3n) {
     margin-right: 0
@@ -1599,14 +1600,14 @@ content-editor
     content: "\ea62"
 }
 .ct-widget .ct-tool--heading:before {
-    content: "Título";
+    content: "H";
     font-weight: 700
 }
 .ct-widget .ct-tool--subheading:before {
-    content: "Subtítulo"
+    content: "H"
 }
 .ct-widget .ct-tool--paragraph:before {
-    content: "Parágrafo"
+    content: "P"
 }
 .ct-widget .ct-tool--preformatted:before {
     content: "\ea80"

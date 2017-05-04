@@ -24,39 +24,61 @@
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('cake.css') ?>
     <?= $this->Html->css('sandbox.css') ?>
     <?= $this->Html->css('content-tools.css') ?>
     <?= $this->Html->css('font-awesome.min.css') ?>
+    <?= $this->Html->css('bootstrap.min.css') ?>
+    <?= $this->Html->css('styles.css') ?>
 
-    <?= $this->Html->script('content-tools.js') ?>
-    <?= $this->Html->script('sandbox.js') ?>
+    <?= $this->Html->script('jquery-3.1.1.js') ?>
+    <?= $this->Html->script('bootstrap.min.js') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
-        <div class="top-bar-section">
-            <ul class="left">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Favoritos</a></li>
-            </ul>
-        </div>
-        <div class="top-bar-section">
-            <ul class="right">
-                <li><input type="search" name="find"></li>
-                <li><button>Buscar</button></li>
-            </ul>
-        </div>
-    </nav>
+    <?php if($this->templatePath != 'Users'): ?>
+        <nav class="navbar navbar-default" data-topbar role="navigation">
+            <div>
+                <div id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/materials/">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Categorias</a>
+                        </li>
+                        <li>
+                            <a href="#">Favoritos</a>
+                        </li>
+                        <?php if($role == 'colaborador'): ?>
+                            <li>
+                                <a href="/materials/myMaterial">Minhas Aulas</a>
+                            </li>
+                        <?php endif; ?>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="input-group">
+                            <input type="search" class="form-control" aria-label="Faça sua busca aqui" placeholder="Faça sua busca aqui">
+                            <div class="input-group-btn">
+                                <button type="submit" class="fa fa-search btn btn-default" aria-hidden="true">
+                                </button>
+                            </div>
+                        </div>
+                        <a class="fa fa-sign-out btn btn-default" aria-hidden="true" href="/users/logout"></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    <?php endif; ?>
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
+    <div class="container-fluid">
         <?= $this->fetch('content') ?>
     </div>
+    <?= $this->Html->script('content-tools.js') ?>
+    <?= $this->Html->script('sandbox.js') ?>
+    <?= $this->Html->script('scripts.js') ?>
     <footer>
     </footer>
 </body>

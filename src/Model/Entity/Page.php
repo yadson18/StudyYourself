@@ -7,7 +7,7 @@ use Cake\ORM\Entity;
  * Page Entity
  *
  * @property int $id
- * @property string|resource $data
+ * @property string $data
  * @property int $material_id
  *
  * @property \App\Model\Entity\Material $material
