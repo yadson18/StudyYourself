@@ -6304,13 +6304,13 @@
 
     ToolboxUI.prototype.mount = function() {
       var coord, position, restore;
-      this._domElement = this.constructor.createUl(['ct-widget', 'ct-toolbox']);
+      this._domElement = this.constructor.createUl(['ct-widget', 'ct-toolbox', , 'col-md-10', 'col-sm-10', 'col-xs-10']);
       this.parent().domElement().appendChild(this._domElement);
       this._domGrip = this.constructor.createDiv(['ct-toolbox__grip', 'ct-grip']);
       /*this._domToolGroups = this.constructor.createDiv(['ct-tool-groups']);
       this._domElement.appendChild(this._domToolGroups);*/
       this.tools(this._tools);
-      restore = window.localStorage.getItem('ct-toolbox-position');
+      /*restore = window.localStorage.getItem('ct-toolbox-position');
       if (restore && /^\d+,\d+$/.test(restore)) {
         position = (function() {
           var _i, _len, _ref, _results;
@@ -6325,7 +6325,7 @@
         this._domElement.style.left = "" + position[0] + "px";
         this._domElement.style.top = "" + position[1] + "px";
         this._contain();
-      }
+      }*/
       return this._addDOMEventListeners();
     };
 
@@ -8308,7 +8308,9 @@
     };
 
     _EditorApp.prototype.mount = function() {
-      this._domElement = this.constructor.createDiv(['ct-app']);
+      this._domElement = this.constructor.createNav(['ct-app', 'navbar', 'navbar-default']);
+      this._domElement.setAttribute('data-topbar', "");
+      this._domElement.setAttribute('role', "navigation");
       if(document['all']['editor']){
         document['all']['editor'].before(this._domElement); 
       }

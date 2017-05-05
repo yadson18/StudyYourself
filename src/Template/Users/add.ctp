@@ -80,6 +80,6 @@
             <button type="submit" class="btn btn-default btn-lg btn-block">Registrar-se</button>
         </div>
     </div>
-    <?= $this->Html->link(__('clique para retornar ao login'), ['action' => 'login', 'class' => 'sr-only sr-only-focusable']) ?>
+    <?= $this->Html->link(__('clique para retornar ao login'), ['action' => 'login']) ?>
     <?= $this->Form->end() ?>
 </div>

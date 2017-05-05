@@ -1110,14 +1110,14 @@
         transform: transform
     }
 }
-.ct-widget.ct-ignition .ct-ignition__button {
+/*.ct-widget.ct-ignition .ct-ignition__button {
     display: none
-}
-.ct-widget.ct-ignition--editing .ct-ignition__button--cancel,
+}*/
+/*.ct-widget.ct-ignition--editing .ct-ignition__button--cancel,
 .ct-widget.ct-ignition--editing .ct-ignition__button--confirm,
 .ct-widget.ct-ignition--ready .ct-ignition__button--edit {
     display: block
-}
+}*/
 .ct-widget.ct-ignition--busy .ct-ignition__button {
     display: none
 }
@@ -1128,11 +1128,11 @@
     /* border-radius: 24px; */
     content: '';
     cursor: pointer;
-    display: inline;
+    /*display: inline;*/
     height: 48px;
     line-height: 48px;
     opacity: .9;
-    position: absolute;
+   /* position: absolute;*/
     text-align: center;
     font-family: icon;
     font-size: 24px;
@@ -1144,6 +1144,8 @@
     /* -webkit-font-smoothing: antialiased; */
     -moz-osx-font-smoothing: grayscale;
     width: 48px;
+    list-style-type: none;
+    display: inline;
 }
 .ct-widget .ct-ignition__button:before {
     color: #fff
@@ -1487,8 +1489,8 @@
 .ct-widget.ct-toolbox {
     background: hsla(0, 0%, 91%, .9);
     box-shadow: 0 3px 3px rgba(0, 0, 0, .35);
-    width: 100%
-}
+    /*width: 100%
+*/}
 .ct-widget .ct-toolbox__grip {
     padding: 8px 0
 }
@@ -1534,7 +1536,7 @@ content-editor
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
-.ct-widget .ct-tool:after {
+/*.ct-widget .ct-tool:after {
     background: #000;
     color: #fff;
     content: attr(data-ct-tooltip);
@@ -1552,8 +1554,9 @@ content-editor
     line-height: 20px;
     visibility: hidden;
     width: 85px;
-    word-break: break-word
-}
+    word-break: break-word;
+    display: inline;
+}*/
 .ct-widget .ct-tool:hover:after {
     opacity: 1;
     visibility: visible;
@@ -1695,8 +1698,7 @@ content-editor
         transform: background-color
     }
     to {
-        outline-color: hsla(0, 0%, 100%, 0);
-        -webkit-transform: background-color;
+.        -webkit-transform: background..........color;
         transform: background-color
     }
 }
