@@ -73,9 +73,15 @@
         </nav>
         <?= $this->Flash->render() ?>
     <?php endif; ?>
-    <div class="container-fluid">
-        <?= $this->fetch('content') ?>
-    </div>
+    <?php  if($this->templatePath != 'Users'): ?>
+        <div class="container-fluid">
+            <?= $this->fetch('content') ?>
+        </div>
+    <?php else: ?>
+        <div class="container">
+            <?= $this->fetch('content') ?>
+        </div>
+    <?php endif; ?>
     <?= $this->Html->script('content-tools.js') ?>
     <?= $this->Html->script('sandbox.js') ?>
     <?= $this->Html->script('scripts.js') ?>
