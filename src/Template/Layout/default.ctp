@@ -71,9 +71,9 @@
                 </div>
             </div>
         </nav>
+        <?= $this->Flash->render() ?>
     <?php endif; ?>
-    <?= $this->Flash->render() ?>
-    <div class="container-fluid">
+    <div class="container">
         <?= $this->fetch('content') ?>
     </div>
     <?= $this->Html->script('content-tools.js') ?>

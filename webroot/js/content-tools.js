@@ -5930,7 +5930,7 @@
 
     IgnitionUI.prototype.mount = function() {
       IgnitionUI.__super__.mount.call(this);
-      this._domElement = this.constructor.createUl(['ct-widget', 'ct-ignition', 'ct-ignition--ready']);
+      this._domElement = this.constructor.createUl(['ct-widget', 'ct-ignition', 'ct-ignition--ready', 'col-md-2', 'col-sm-2', 'col-xs-2']);
       this.parent().domElement().appendChild(this._domElement);
       this._domEdit = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--edit']);
       this._domElement.appendChild(this._domEdit);
@@ -6304,11 +6304,11 @@
 
     ToolboxUI.prototype.mount = function() {
       var coord, position, restore;
-      this._domElement = this.constructor.createDiv(['ct-widget', 'ct-toolbox']);
+      this._domElement = this.constructor.createUl(['ct-widget', 'ct-toolbox']);
       this.parent().domElement().appendChild(this._domElement);
       this._domGrip = this.constructor.createDiv(['ct-toolbox__grip', 'ct-grip']);
-      this._domToolGroups = this.constructor.createDiv(['ct-tool-groups']);
-      this._domElement.appendChild(this._domToolGroups);
+      /*this._domToolGroups = this.constructor.createDiv(['ct-tool-groups']);
+      this._domElement.appendChild(this._domToolGroups);*/
       this.tools(this._tools);
       restore = window.localStorage.getItem('ct-toolbox-position');
       if (restore && /^\d+,\d+$/.test(restore)) {
@@ -6344,29 +6344,29 @@
         toolUI.unmount();
       }
       this._toolUIs = {};
-      while (this._domToolGroups.lastChild) {
-        this._domToolGroups.removeChild(this._domToolGroups.lastChild);
+      while (this._domElement.lastChild) {
+        this._domElement.removeChild(this._domElement.lastChild);
       }
       _ref1 = this._tools;
       _results = [];
       
-      this._nav = this.constructor.createNav(['menu']);
-      this._nav.setAttribute('role', 'navigation');
-      this._domToolGroups.appendChild(this._nav);
-      domToolGroup = this.constructor.createUl(['ct-tool-group']);
+      /*this._nav = this.constructor.createNav(['menu']);
+      this._nav.setAttribute('role', 'navigation');*/
+      /*this._domElement.appendChild(this._nav);*/
+     /* domToolGroup = this.constructor.createUl(['ct-tool-group']);*/
       var _j, _len1, _results1, _results2;
       _results1 = [];      
       _results2 = [];                                                           
 
       for (i = _i = 0, _len = _ref1.length; _i < _len; i = ++_i) {
         toolGroup = _ref1[i];
-        this._nav.appendChild(domToolGroup);
+        /*this._nav.appendChild(domToolGroup);*/
         _results.push((function() {
           for (_j = 0, _len1 = toolGroup.length; _j < _len1; _j++) {
             toolName = toolGroup[_j];
             tool = ContentTools.ToolShelf.fetch(toolName);
             this._toolUIs[toolName] = new ContentTools.ToolUI(tool);
-            this._toolUIs[toolName].mount(domToolGroup);
+            this._toolUIs[toolName].mount(this._domElement);
             this._toolUIs[toolName].disabled(true);
               
             _results2.push(this._toolUIs[toolName].addEventListener('applied', (function(_this) {
@@ -8309,7 +8309,9 @@
 
     _EditorApp.prototype.mount = function() {
       this._domElement = this.constructor.createDiv(['ct-app']);
-      document['all']['menu-editor'].insertBefore(this._domElement, null);
+      if(document['all']['editor']){
+        document['all']['editor'].before(this._domElement); 
+      }
       return this._addDOMEventListeners();
     };
 

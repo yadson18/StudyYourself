@@ -1,3 +1,23 @@
 #addNew:focus, #addNew:hover{
 	text-decoration: none;
 }
+.verticalCenter {
+  position: relative;
+  height: 14rem;
+}
+.login {
+  position: absolute;
+  top: 100%;
+  
+}
+.register {
+  position: absolute;
+  top: 50%;
+  
+}
+label{
+	display: block;
+}
+#addNew{
+	font-size: 10em;
+}
