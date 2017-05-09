@@ -21,3 +21,24 @@ label{
 #addNew{
 	font-size: 10em;
 }
+.material-content *{
+	font-size: 2em;
+}
+.material-content{
+	box-shadow: 1.2px 1.2px 3px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	padding: 1px 10px 5px 10px;
+	text-align: center;
+	overflow: hidden;
+}
+.material-content-mouseOver{
+	transition: 0.5s;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}
+.navbar{
+	margin-bottom: 0;
+}
+.material{
+	padding: 15px;
+}

@@ -1,14 +1,14 @@
-var firstHeight = window.innerHeight;
-var heightDiv = firstHeight - (firstHeight / 3);
-var firstWidth = window.innerWidth / 100;
-//var widthDiv = firstWidth / 100;
-$("#content-editor").css("height", heightDiv);
-/*$("#content-editor").css("left", (firstWidth * 26));*/
+$(".material-content").css("height", ($('.material-content').width() - 20) + "px");
 
-console.log(heightDiv);
+$(".material-content").children("h1").each(function() {
+	if(($(".material-content").height() / 2) > $(this).height()){
+		$(this).css("margin-top", ($(".material-content").height() / 2) - $(this).height());
+	}
+});
 
-$(window).resize(function() {
-  var height = window.innerHeight;
-  heightDiv = height - (height / 3);
-  $("#content-editor").css("height", heightDiv);
+$(".material-content").on("mouseover", function(){
+	$(this).toggleClass("material-content-mouseOver");
+});
+$(".material-content").on("mouseout", function(){
+	$(this).toggleClass("material-content-mouseOver");
 });

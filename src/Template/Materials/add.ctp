@@ -4,8 +4,8 @@
   */
 ?>
 <div id="content">
-    <legend><?= __('Adicionar Conteúdo') ?></legend>
-    <section id="editor">
+    <h3><?= __('Adicionar Conteúdo') ?></h3>
+    <div id="editor">
         <div data-editable data-name="content" id="content-editor"></div>
-    </section>
+    </div>
 </div>

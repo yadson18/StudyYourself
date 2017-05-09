@@ -57,7 +57,7 @@ class MaterialsController extends AppController
         $page = TableRegistry::get('Pages')->newEntity();
 
         if ($this->request->is('post')) {
-            $material->title = "Test";
+            $material->title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
             $material->user_id = $this->Auth->user('id');
 
             if ($this->Materials->save($material)) {

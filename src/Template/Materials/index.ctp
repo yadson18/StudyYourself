@@ -7,14 +7,15 @@
     <h3><?= __('Destaques') ?></h3>
     <div class="row">
         <?php foreach ($materials as $material): ?>
-            <?php foreach ($material->pages as $page): ?>
-                <div class="col-md-2">
-                    <a href="#">
-                        <h1><?= $material->title ?></h1>
-                        <?= $page->data ?>
-                    </a>
-                </div>
-            <?php endforeach; ?>
+            <a href="#">
+                <?php foreach ($material->pages as $page): ?>
+                    <div class="col-md-3 material">
+                        <div class="material-content">
+                            <h1><?= $material->title ?></h1>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </a>
         <?php endforeach; ?>
     </div>
     <div class="paginator">
