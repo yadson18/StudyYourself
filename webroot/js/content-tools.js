@@ -6304,7 +6304,7 @@
 
     ToolboxUI.prototype.mount = function() {
       var coord, position, restore;
-      this._domElement = this.constructor.createUl(['ct-widget', 'ct-toolbox', , 'col-md-10', 'col-sm-10', 'col-xs-10']);
+      this._domElement = this.constructor.createUl(['ct-widget', 'ct-toolbox']);
       this.parent().domElement().appendChild(this._domElement);
       this._domGrip = this.constructor.createDiv(['ct-toolbox__grip', 'ct-grip']);
       /*this._domToolGroups = this.constructor.createDiv(['ct-tool-groups']);

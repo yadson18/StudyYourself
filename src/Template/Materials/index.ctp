@@ -3,15 +3,22 @@
   * @var \App\View\AppView $this
   */
 ?>
-<div class="materials index large-9 medium-8 columns content">
-    <h3><?= __('Destaques') ?></h3>
-    <div class="row">
+<div class="content">
+    <h1 class="title"><?= __('Destaques') ?></h1>
+    <div class="row h-100 w-100">
         <?php foreach ($materials as $material): ?>
-            <a href="#">
+            <a title="<?= $material->title ?>" href="test.php">
                 <?php foreach ($material->pages as $page): ?>
-                    <div class="col-md-3 material">
+                    <div class="col-md-3 material col-sm-6 col-xs-8 col-md-offset-0 col-sm-offset-0 col-xs-offset-2 flex-align">
                         <div class="material-content">
-                            <h1><?= $material->title ?></h1>
+                            <!-- <h1 class="hidden"><?= $material->title ?></h1> -->
+                            <h1>
+                                <?php if(strlen($material->title) > 17): ?>
+                                    <?= substr($material->title, 0, 17) . "..." ?>
+                                <?php else: ?>
+                                    <?= $material->title ?>
+                                <?php endif; ?>
+                            </h1>
                         </div>
                     </div>
                 <?php endforeach; ?>

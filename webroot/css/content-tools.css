@@ -1486,10 +1486,8 @@
 .ct-widget .ct-section__input--invalid {
     color: #e74c3c
 }
-.ct-widget.ct-toolbox {
+.ct-widget .ct-toolbox {
     background: hsla(0, 0%, 91%, .9);
-    /*box-shadow: 0 3px 3px rgba(0, 0, 0, .35);
-    width: 100%*/
 }
 .ct-widget .ct-toolbox__grip {
     padding: 8px 0
@@ -1712,6 +1710,11 @@ content-editor
 .        -webkit-transform: background..........color;
         transform: background-color
     }
+}
+.ct-app{
+    width: 58%;
+    margin: auto;
+    border-radius: 0px;
 }
 .ct-app,
 .ct-app *,

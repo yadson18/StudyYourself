@@ -20,8 +20,11 @@ class MaterialsController extends AppController
     public function index()
     {
         $this->paginate = [
+            'limit' => 8,
             'contain' => ['Users', 'Pages']
+            /*,'conditions' => []*/
         ];
+
         $materials = $this->paginate($this->Materials);
 
         $role = $this->Auth->user('role');
