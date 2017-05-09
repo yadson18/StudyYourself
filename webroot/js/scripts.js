@@ -11,10 +11,10 @@ $(document).ready(function(){
 		});
 	});
 
-	$(".material-content").on("mouseover", function(){
+	$(".mouseOver").on("mouseover", function(){
 		$(this).toggleClass("material-content-mouseOver");
 	});
-	$(".material-content").on("mouseout", function(){
+	$(".mouseOver").on("mouseout", function(){
 		$(this).toggleClass("material-content-mouseOver");
 	});
 });

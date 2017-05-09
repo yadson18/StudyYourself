@@ -44,9 +44,10 @@ class MaterialsController extends AppController
         $material = $this->Materials->get($id, [
             'contain' => ['Users', 'Pages']
         ]);
+        $role = $this->Auth->user('role');
 
-        $this->set('material', $material);
-        $this->set('_serialize', ['material']);
+        $this->set(compact('material', 'role'));
+        $this->set('_serialize', ['material', 'role']);
     }
 
     /**
