@@ -60,16 +60,36 @@ class MaterialsController extends AppController
         $material = $this->Materials->newEntity();
         $page = TableRegistry::get('Pages')->newEntity();
 
-        if ($this->request->is('post')) {
-            $material->title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+        if ($this->request->is(['get']) && $_GET != null) {
+            $material->title = $_GET["title"];
             $material->user_id = $this->Auth->user('id');
 
             if ($this->Materials->save($material)) {
-                $page->data = $_POST["materialPage"];
+                $page->data = $_GET["materialPage"];
                 $page->material_id = $material->id;
                 TableRegistry::get('Pages')->save($page);
+
+                $json = [
+                    'id' => $material->id
+                ];
+
+                echo json_encode($json) . " ";
             }  
         }
+        else if($this->request->is(['patch', 'post', 'put'])){
+            $materialEdit = $this->Materials->get($_POST["id"], [
+                'contain' => ['Pages']
+            ]);
+
+            $material->title = "a";
+            $material->pages[0] = $_POST["materialPage"];
+
+
+            if($this->Materials->save($material)){
+                debug($material);
+            }
+        }
+
         $users = $this->Materials->Users->find('list', ['limit' => 200]);
         $role = $this->Auth->user('role');
         $this->set(compact('material', 'users', 'page', 'role'));

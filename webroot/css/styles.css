@@ -19,7 +19,17 @@ label{
 	display: block;
 }
 #addNew{
-	font-size: 1em;
+	font-size: 4em;
+	margin: 0;	
+}
+.add-title{
+	margin: .67em 0;
+	text-align: center;
+}
+.material-title{
+	position: relative;
+	top: 40%;
+	margin: 0;
 }
 .material-content *{
 	font-size: 2em;

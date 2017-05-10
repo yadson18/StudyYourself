@@ -12,7 +12,7 @@
                     <div class="col-md-3 material col-sm-6 col-xs-8 col-md-offset-0 col-sm-offset-0 col-xs-offset-2">
                         <div class="material-content mouseOver">
                             <!-- <h1 class="hidden"><?= $material->title ?></h1> -->
-                            <h1>
+                            <h1 class="material-title">
                                 <?php if(strlen($material->title) > 17): ?>
                                     <?= substr($material->title, 0, 17) . "..." ?>
                                 <?php else: ?>

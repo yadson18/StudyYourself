@@ -5932,13 +5932,13 @@
       IgnitionUI.__super__.mount.call(this);
       this._domElement = this.constructor.createUl(['ct-widget', 'ct-ignition', 'ct-ignition--ready', 'col-md-2', 'col-sm-2', 'col-xs-2']);
       this.parent().domElement().appendChild(this._domElement);
-      this._domEdit = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--edit']);
+      this._domEdit = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--edit', 'col-md-1', 'col-sm-1', 'col-xs-1']);
       this._domElement.appendChild(this._domEdit);
-      this._domConfirm = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--confirm']);
+      this._domConfirm = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--confirm', 'col-md-1', 'col-sm-1', 'col-xs-1', 'hide-action-button']);
       this._domElement.appendChild(this._domConfirm);
-      this._domCancel = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--cancel']);
+      this._domCancel = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--cancel', 'col-md-1', 'col-sm-1', 'col-xs-1', 'hide-action-button']);
       this._domElement.appendChild(this._domCancel);
-      this._domBusy = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--busy']);
+      this._domBusy = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--busy', 'col-md-1', 'col-sm-1', 'col-xs-1', 'hide-action-button']);
       this._domElement.appendChild(this._domBusy);
       return this._addDOMEventListeners();
     };

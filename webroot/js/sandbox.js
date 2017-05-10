@@ -142,6 +142,7 @@
 
   window.onload = function() {
     var FIXTURE_TOOLS, editor, req;
+    var material_id = null;
     ContentTools.IMAGE_UPLOADER = ImageUploader.createImageUploader;
     ContentTools.StylePalette.add([new ContentTools.Style('By-line', 'article__by-line', ['p']), new ContentTools.Style('Caption', 'article__caption', ['p']), new ContentTools.Style('Example', 'example', ['pre']), new ContentTools.Style('Example + Good', 'example--good', ['pre']), new ContentTools.Style('Example + Bad', 'example--bad', ['pre'])]);
     editor = ContentTools.EditorApp.get();
@@ -151,21 +152,40 @@
       if (Object.keys(ev.detail().regions).length === 0) {
         return;
       }
-      editor.busy(true);
-      var materials = ev.detail().regions.content;
-      $.post("/materials/add", { materialPage:  materials}, 
-        function(datas, success){ 
-          if(success){
-            saved = (function(_this) {
-              return function() {
-                editor.busy(false);
-                return new ContentTools.FlashUI('ok');
-              };
-            })(this);
-            return setTimeout(saved, 2000);
-          }
+      else{
+        if(material_id === null){
+          editor.busy(true);
+          $.get("/materials/add", {'title': 'Lorem ipsum dolor.', 'materialPage': ev.detail().regions.content}, 
+            function(data, status){ 
+              if(status === "success"){
+                var id = JSON.parse(data.split(" ")[0]);
+                material_id = id['id'];
+                saved = (function(_this) {
+                  return function() {
+                    editor.busy(false);
+                    return new ContentTools.FlashUI('ok');
+                  };
+                })(this);
+                return setTimeout(saved, 2000);
+              }
+            }
+          );
         }
-      );
+        else{
+          editor.busy(true);
+          $.post("/materials/add", {'id': material_id, 'title': 'Lorem ipsum dolor.', 'materialPage': ev.detail().regions.content}, 
+            function(status){ 
+              saved = (function(_this) {
+                return function() {
+                  editor.busy(false);
+                  return new ContentTools.FlashUI('ok');
+                };
+              })(this);
+              return setTimeout(saved, 2000);
+            }
+          );
+        }
+      }
     });
     FIXTURE_TOOLS = [['undo', 'redo', 'remove']];
     ContentEdit.Root.get().bind('focus', function(element) {

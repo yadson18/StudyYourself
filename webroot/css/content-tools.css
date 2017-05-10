@@ -1145,7 +1145,7 @@
     -moz-osx-font-smoothing: grayscale;
     width: 48px;
     list-style-type: none;
-    display: inline;
+    /*display: inline;*/
 }
 .ct-widget .ct-ignition__button:before {
     color: #fff
@@ -1177,7 +1177,6 @@
 }
 .ct-widget .ct-ignition__button--cancel {
     background: #e74c3c;
-    left: 64px
 }
 .ct-widget .ct-ignition__button--cancel:before {
     content: '\ea0f'
@@ -1712,7 +1711,7 @@ content-editor
     }
 }
 .ct-app{
-    width: 58%;
+    width: 75%;
     margin: auto;
     border-radius: 0px;
 }
@@ -1736,4 +1735,7 @@ content-editor
 }
 .ct--puesdo-select {
     background: rgba(0, 0, 0, .1)
+}
+.hide-action-button{
+    display: none;
 }
