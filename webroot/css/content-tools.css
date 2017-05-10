@@ -128,6 +128,17 @@
 .ce-element--drop.ce-element--type-table-row.ce-element--drop-below {
     background: #f39c12 url(img/drop - vert - below.svg) 50 % /auto 32px repeat
 }
+div table, 
+div th, 
+div tr, 
+div td{
+    border: solid 1px black;
+    padding: 5px;
+}
+div table{
+    margin: auto;
+    margin-bottom: 10px;
+}
 .ce-element--focused,
 .ce-element--over {
     background-color: rgba(243, 156, 18, .1);
@@ -1124,6 +1135,14 @@
 .ct-widget.ct-ignition--busy .ct-ignition__button--busy {
     display: block
 }
+.ct-ignition__button--busy{
+    border-radius: 50%;
+}
+.ct-ignition .col-md-1,
+.ct-ignition .col-sm-1, 
+.ct-ignition .col-xs-1{
+    padding-left: 12px;   
+}
 .ct-widget .ct-ignition__button {
     /* border-radius: 24px; */
     content: '';
@@ -1497,7 +1516,7 @@
     margin: auto;
 }
 #editor #content-editor{
-    padding: 6px;
+    padding: 10px;
     width: 58%;
     margin: auto;
     box-shadow: 1.2px 1.2px 3px 2px rgba(0, 0, 0, 0.2);

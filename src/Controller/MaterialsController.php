@@ -81,12 +81,12 @@ class MaterialsController extends AppController
                 'contain' => ['Pages']
             ]);
 
-            $material->title = "a";
-            $material->pages[0] = $_POST["materialPage"];
+            $materialEdit->title = "a";
+            $materialEdit->pages[0] = $_POST["materialPage"];
 
 
-            if($this->Materials->save($material)){
-                debug($material);
+            if($this->Materials->save($materialEdit)){
+                debug($materialEdit);
             }
         }
 
