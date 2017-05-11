@@ -141,8 +141,10 @@
   window.ImageUploader = ImageUploader;
 
   window.onload = function() {
-    var FIXTURE_TOOLS, editor, req;
-    var material_id = null;
+    var FIXTURE_TOOLS, editor, req, material_id, pages_id;
+    material_id = null;
+    pages_id = [];
+
     ContentTools.IMAGE_UPLOADER = ImageUploader.createImageUploader;
     ContentTools.StylePalette.add([new ContentTools.Style('By-line', 'article__by-line', ['p']), new ContentTools.Style('Caption', 'article__caption', ['p']), new ContentTools.Style('Example', 'example', ['pre']), new ContentTools.Style('Example + Good', 'example--good', ['pre']), new ContentTools.Style('Example + Bad', 'example--bad', ['pre'])]);
     editor = ContentTools.EditorApp.get();
@@ -155,11 +157,18 @@
       else{
         if(material_id === null){
           editor.busy(true);
-          $.get("/materials/add", {'title': 'Lorem ipsum dolor.', 'materialPage': ev.detail().regions.content}, 
+          $.get("/materials/add", 
+            {
+              'title': 'Lorem ipsum dolor.', 
+              'materialPage': ev.detail().regions.content
+            }, 
             function(data, status){ 
               if(status === "success"){
-                var id = JSON.parse(data.split(" ")[0]);
-                material_id = id['id'];
+                var material_data = JSON.parse(data.split(" ")[0]);
+                material_id = material_data['material_id'];
+                for(index in material_data['pages_id']){
+                  pages_id[index] = material_data['pages_id'][index];
+                }
                 saved = (function(_this) {
                   return function() {
                     editor.busy(false);
@@ -173,7 +182,13 @@
         }
         else{
           editor.busy(true);
-          $.post("/materials/add", {'id': material_id, 'title': 'Lorem ipsum dolor.', 'materialPage': ev.detail().regions.content}, 
+          $.post("/materials/add", 
+            {
+              'material_id': material_id, 
+              'title': 'Lorem ipsum dolor.', 
+              'pages_id': pages_id, 
+              'materialPage': ev.detail().regions.content
+            }, 
             function(status){ 
               saved = (function(_this) {
                 return function() {

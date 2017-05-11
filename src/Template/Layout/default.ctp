@@ -39,7 +39,6 @@
 </head>
 <body>
     <?php if($this->templatePath != 'Users'): ?>
-        <h1 id="logo-example">Study Yourself</h1>
         <nav class="navbar navbar-default" data-topbar role="navigation">
             <div>
                 <div id="bs-example-navbar-collapse-1">

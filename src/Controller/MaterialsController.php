@@ -70,23 +70,33 @@ class MaterialsController extends AppController
                 TableRegistry::get('Pages')->save($page);
 
                 $json = [
-                    'id' => $material->id
+                    'material_id' => $material->id,
+                    'pages_id' => [$page->id]
                 ];
 
                 echo json_encode($json) . " ";
             }  
         }
         else if($this->request->is(['patch', 'post', 'put'])){
-            $materialEdit = $this->Materials->get($_POST["id"], [
+            $get_pages = [];
+
+            $get_material = $this->Materials->get($_POST["material_id"], [
                 'contain' => ['Pages']
             ]);
 
-            $materialEdit->title = "a";
-            $materialEdit->pages[0] = $_POST["materialPage"];
+            $get_material->title = $_POST["title"];
 
+            for($i = 0; $i < sizeof($_POST['pages_id']); $i++) {
+                $get_pages[$i] = TableRegistry::get('Pages')->get($_POST['pages_id'][$i], ['contain' => []]);
+                $get_pages[$i]->data = $_POST["materialPage"];
+            }
 
-            if($this->Materials->save($materialEdit)){
-                debug($materialEdit);
+            debug($get_pages);
+
+            if($this->Materials->save($get_material)){
+                foreach ($get_pages as $page) {
+                    TableRegistry::get('Pages')->save($page);
+                }
             }
         }
 

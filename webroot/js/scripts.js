@@ -1,14 +1,14 @@
 $(document).ready(function(){
-	$(".material-content").css({"height": ($('.material-content').width() - 20) + "px"});
+	$(".content-size").css({"height": ($('.material-content').width() - 20) + "px"});
 
 	$(window).resize(function(){
-		$(".material-content").css("height", ($('.material-content').width() - 20) + "px");
+		$(".content-size").css("height", ($('.material-content').width() - 20) + "px");
 	});
 
-	$(".mouseOver").on("mouseover", function(){
+	$(".material-content").on("mouseover", function(){
 		$(this).toggleClass("material-content-mouseOver");
 	});
-	$(".mouseOver").on("mouseout", function(){
+	$(".material-content").on("mouseout", function(){
 		$(this).toggleClass("material-content-mouseOver");
 	});
 
