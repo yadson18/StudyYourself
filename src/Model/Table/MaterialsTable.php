@@ -45,6 +45,9 @@ class MaterialsTable extends Table
             'foreignKey' => 'user_id',
             'joinType' => 'INNER'
         ]);
+        $this->belongsTo('Categories', [
+            'foreignKey' => 'category_id'
+        ]);
         $this->hasMany('Pages', [
             'foreignKey' => 'material_id'
         ]);

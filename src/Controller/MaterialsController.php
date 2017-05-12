@@ -81,7 +81,7 @@ class MaterialsController extends AppController
             $get_pages = [];
 
             $get_material = $this->Materials->get($_POST["material_id"], [
-                'contain' => ['Pages']
+                'contain' => []
             ]);
 
             $get_material->title = $_POST["title"];
