@@ -1,0 +1,1 @@
+Todos os arquivos não referentes ao Cake PHP, estarão nesta pasta.
