@@ -91,8 +91,6 @@ class MaterialsController extends AppController
                 $get_pages[$i]->data = $_POST["materialPage"];
             }
 
-            debug($get_pages);
-
             if($this->Materials->save($get_material)){
                 foreach ($get_pages as $page) {
                     TableRegistry::get('Pages')->save($page);

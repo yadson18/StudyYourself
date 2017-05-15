@@ -150,25 +150,47 @@
     editor = ContentTools.EditorApp.get();
     editor.init('[data-editable], [data-fixture]', 'data-name');
     editor.addEventListener('saved', function(ev) {
-      var saved;
-      if (Object.keys(ev.detail().regions).length === 0) {
+      var saved, materialContent = " ";
+      if ((Object.keys(ev.detail().regions).length === 0) && ($("#input-title").val() === "")) {
         return;
       }
       else{
-        if(material_id === null){
-          editor.busy(true);
-          $.get("/materials/add", 
-            {
-              'title': 'Lorem ipsum dolor.', 
-              'materialPage': ev.detail().regions.content
-            }, 
-            function(data, status){ 
-              if(status === "success"){
-                var material_data = JSON.parse(data.split(" ")[0]);
-                material_id = material_data['material_id'];
-                for(index in material_data['pages_id']){
-                  pages_id[index] = material_data['pages_id'][index];
+        if(($("#input-title").val() !== "") && (ev.detail().regions.content !== undefined)){
+          if(material_id === null){
+            editor.busy(true);
+            $.get("/materials/add", 
+              {
+                'title': $("#input-title").val(), 
+                'materialPage': ev.detail().regions.content
+              }, 
+              function(data, status){ 
+                if(status === "success"){
+                  var material_data = JSON.parse(data.split(" ")[0]);
+                  material_id = material_data['material_id'];
+                  for(index in material_data['pages_id']){
+                    pages_id[index] = material_data['pages_id'][index];
+                  }
+                  saved = (function(_this) {
+                    return function() {
+                      editor.busy(false);
+                      return new ContentTools.FlashUI('ok');
+                    };
+                  })(this);
+                  return setTimeout(saved, 2000);
                 }
+              }
+            );
+          }
+          else{
+            editor.busy(true);
+            $.post("/materials/add", 
+              {
+                'material_id': material_id, 
+                'title': $("#input-title").val(), 
+                'pages_id': pages_id, 
+                'materialPage': ev.detail().regions.content
+              }, 
+              function(status){ 
                 saved = (function(_this) {
                   return function() {
                     editor.busy(false);
@@ -177,28 +199,11 @@
                 })(this);
                 return setTimeout(saved, 2000);
               }
-            }
-          );
+            );
+          }
         }
         else{
-          editor.busy(true);
-          $.post("/materials/add", 
-            {
-              'material_id': material_id, 
-              'title': 'Lorem ipsum dolor.', 
-              'pages_id': pages_id, 
-              'materialPage': ev.detail().regions.content
-            }, 
-            function(status){ 
-              saved = (function(_this) {
-                return function() {
-                  editor.busy(false);
-                  return new ContentTools.FlashUI('ok');
-                };
-              })(this);
-              return setTimeout(saved, 2000);
-            }
-          );
+          return;
         }
       }
     });

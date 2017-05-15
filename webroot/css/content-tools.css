@@ -1517,13 +1517,19 @@ div table{
 }
 #editor #content-editor{
     padding: 10px;
-    width: 58%;
+    /*width: 58%;*/
     margin: auto;
-    box-shadow: 1.2px 1.2px 3px 2px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0.1px 0.1px 3px 1px rgba(0, 0, 0, 0.2);*/
     height: 600px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     overflow: hidden;
+}
+.editor-row.col-md-8{
+    box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 20px;
 }
 .menu{
     padding: 10px;
@@ -1730,9 +1736,10 @@ content-editor
     }
 }
 .ct-app{
-    width: 75%;
+    /*width: 58.1%;*/
     margin: auto;
     border-radius: 0px;
+    /*box-shadow: 0.1px 0.1px 3px 0.1px rgba(0, 0, 0, 0.2);*/
 }
 .ct-app,
 .ct-app *,

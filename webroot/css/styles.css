@@ -23,12 +23,13 @@ label{
 	margin: 0;	
 }
 .add-title{
-	margin: .67em 0;
 	text-align: center;
+	position: relative;
+	top: 20%;
 }
 .material-title{
 	position: relative;
-	top: 40%;
+	top: 45%;
 	margin: 0;
 }
 .material-content *{
@@ -74,4 +75,12 @@ label{
     width:1px;
     height:1px;
     overflow:hidden;
+}
+#input-title{
+	width: 66.66%;
+	margin: auto;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 2em;
+	padding: 0;
 }

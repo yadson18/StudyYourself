@@ -20401,3 +20401,710 @@ Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
 2017-05-12 20:17:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2017-05-12 20:17:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2017-05-12 20:17:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:53:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:53:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:53:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:53:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:53:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:53:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:53:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:53:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:54:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:56:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:57:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:58:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:58:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:59:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 12:59:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:00:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:00:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:01:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:02:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:02:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:02:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:07:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:07:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:07:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:07:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:07:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:07:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:07:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:08:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:10:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:11:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:11:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:12:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:16:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:20:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:21:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:22:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:29:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:36:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:37:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:38:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:42:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:42:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:42:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:43:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:45:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:45:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:47:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:47:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:48:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:49:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:51:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:52:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:56:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 13:59:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:00:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:00:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:00:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:00:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:00:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:04:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:04:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:04:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:04:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:05:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:05:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:06:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:06:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:06:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:06:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:06:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:06:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:06:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:06:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:06:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:12:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:14:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:15:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:15:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:16:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:17:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:18:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:18:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:19:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:25:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:25:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:25:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:27:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:27:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:30:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:32:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:34:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:35:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:36:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:36:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:36:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:36:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:36:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:36:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:36:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:37:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:37:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:37:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:38:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:38:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:38:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:38:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:39:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:39:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:41:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:41:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:43:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:44:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:44:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'data' cannot be null
+Request URL: /materials/add?title=sfdewf
+Referer URL: http://localhost:8765/materials/add
+Stack Trace:
+#0 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#4 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\Page), Array)
+#5 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Page), Object(ArrayObject))
+#6 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#9 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /home/yadson/Documentos/cakePHP/StudyYourself/src/Controller/MaterialsController.php(70): Cake\ORM\Table->save(Object(App\Model\Entity\Page))
+#11 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\MaterialsController->add()
+#12 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MaterialsController))
+#14 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/yadson/Documentos/cakePHP/StudyYourself/webroot/index.php(37): Cake\Http\Server->run()
+#25 {main}
+
+
+2017-05-15 14:44:05 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php line=822 in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /materials/add?title=sfdewf
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:44:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /materials/add?title=sfdewf
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:44:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /materials/add?title=sfdewf
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:48:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:48:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:48:15 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'data' cannot be null
+Request URL: /materials/add?title=fegwrg
+Referer URL: http://localhost:8765/materials/add
+Stack Trace:
+#0 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#4 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\Page), Array)
+#5 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Page), Object(ArrayObject))
+#6 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#9 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /home/yadson/Documentos/cakePHP/StudyYourself/src/Controller/MaterialsController.php(70): Cake\ORM\Table->save(Object(App\Model\Entity\Page))
+#11 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\MaterialsController->add()
+#12 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MaterialsController))
+#14 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/yadson/Documentos/cakePHP/StudyYourself/webroot/index.php(37): Cake\Http\Server->run()
+#25 {main}
+
+
+2017-05-15 14:48:15 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php line=822 in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /materials/add?title=fegwrg
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:48:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /materials/add?title=fegwrg
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:48:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /materials/add?title=fegwrg
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:48:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:49:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:49:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:49:45 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'data' cannot be null
+Request URL: /materials/add?title=wffw
+Referer URL: http://localhost:8765/materials/add
+Stack Trace:
+#0 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#4 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\Page), Array)
+#5 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Page), Object(ArrayObject))
+#6 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#9 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /home/yadson/Documentos/cakePHP/StudyYourself/src/Controller/MaterialsController.php(70): Cake\ORM\Table->save(Object(App\Model\Entity\Page))
+#11 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\MaterialsController->add()
+#12 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MaterialsController))
+#14 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/yadson/Documentos/cakePHP/StudyYourself/webroot/index.php(37): Cake\Http\Server->run()
+#25 {main}
+
+
+2017-05-15 14:49:45 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php line=822 in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /materials/add?title=wffw
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:49:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /materials/add?title=wffw
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:49:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /materials/add?title=wffw
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:50:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:50:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:50:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'data' cannot be null
+Request URL: /materials/add?title=fwf
+Referer URL: http://localhost:8765/materials/add
+Stack Trace:
+#0 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#4 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\Page), Array)
+#5 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Page), Object(ArrayObject))
+#6 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#9 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /home/yadson/Documentos/cakePHP/StudyYourself/src/Controller/MaterialsController.php(70): Cake\ORM\Table->save(Object(App\Model\Entity\Page))
+#11 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\MaterialsController->add()
+#12 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MaterialsController))
+#14 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/yadson/Documentos/cakePHP/StudyYourself/webroot/index.php(37): Cake\Http\Server->run()
+#25 {main}
+
+
+2017-05-15 14:50:05 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php line=822 in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /materials/add?title=fwf
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:50:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /materials/add?title=fwf
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:50:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /materials/add?title=fwf
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:50:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:50:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:50:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'data' cannot be null
+Request URL: /materials/add?title=wfdwfe
+Referer URL: http://localhost:8765/materials/add
+Stack Trace:
+#0 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#4 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\Page), Array)
+#5 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Page), Object(ArrayObject))
+#6 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#9 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /home/yadson/Documentos/cakePHP/StudyYourself/src/Controller/MaterialsController.php(70): Cake\ORM\Table->save(Object(App\Model\Entity\Page))
+#11 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\MaterialsController->add()
+#12 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MaterialsController))
+#14 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/yadson/Documentos/cakePHP/StudyYourself/webroot/index.php(37): Cake\Http\Server->run()
+#25 {main}
+
+
+2017-05-15 14:50:28 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php line=822 in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /materials/add?title=wfdwfe
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:50:28 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /materials/add?title=wfdwfe
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:50:28 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /materials/add?title=wfdwfe
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:50:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:50:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:50:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'data' cannot be null
+Request URL: /materials/add?title=wfewqf
+Referer URL: http://localhost:8765/materials/add
+Stack Trace:
+#0 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#4 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\Page), Array)
+#5 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Page), Object(ArrayObject))
+#6 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#9 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /home/yadson/Documentos/cakePHP/StudyYourself/src/Controller/MaterialsController.php(70): Cake\ORM\Table->save(Object(App\Model\Entity\Page))
+#11 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\MaterialsController->add()
+#12 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MaterialsController))
+#14 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/yadson/Documentos/cakePHP/StudyYourself/webroot/index.php(37): Cake\Http\Server->run()
+#25 {main}
+
+
+2017-05-15 14:50:42 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php line=822 in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /materials/add?title=wfewqf
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:50:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /materials/add?title=wfewqf
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:50:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /materials/add?title=wfewqf
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:50:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:50:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:50:51 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "materials"
+Request URL: /materials/add
+Referer URL: http://localhost:8765/materials/add
+Stack Trace:
+#0 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1432): Cake\ORM\Query->firstOrFail()
+#1 /home/yadson/Documentos/cakePHP/StudyYourself/src/Controller/MaterialsController.php(85): Cake\ORM\Table->get(Array, Array)
+#2 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\MaterialsController->add()
+#3 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#4 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MaterialsController))
+#5 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/yadson/Documentos/cakePHP/StudyYourself/webroot/index.php(37): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-05-15 14:51:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:51:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:51:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'data' cannot be null
+Request URL: /materials/add?title=tjhrtjr
+Referer URL: http://localhost:8765/materials/add
+Stack Trace:
+#0 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#4 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\Page), Array)
+#5 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Page), Object(ArrayObject))
+#6 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#9 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /home/yadson/Documentos/cakePHP/StudyYourself/src/Controller/MaterialsController.php(70): Cake\ORM\Table->save(Object(App\Model\Entity\Page))
+#11 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\MaterialsController->add()
+#12 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MaterialsController))
+#14 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/yadson/Documentos/cakePHP/StudyYourself/webroot/index.php(37): Cake\Http\Server->run()
+#25 {main}
+
+
+2017-05-15 14:51:12 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php line=822 in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /materials/add?title=tjhrtjr
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:51:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /materials/add?title=tjhrtjr
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:51:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Error/Debugger.php:822) in [/home/yadson/Documentos/cakePHP/StudyYourself/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /materials/add?title=tjhrtjr
+Referer URL: http://localhost:8765/materials/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-15 14:51:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:52:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:52:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:52:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:52:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 14:52:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:01:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:04:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:04:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:04:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:06:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:07:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:07:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:11:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:11:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:12:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:14:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:15:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:16:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:16:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:16:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:16:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:16:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:17:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:18:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:18:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:18:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:18:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:18:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:18:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:18:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:19:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:19:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:19:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:19:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:19:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:19:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:20:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:24:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-05-15 15:24:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.

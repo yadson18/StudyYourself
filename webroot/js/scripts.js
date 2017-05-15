@@ -13,11 +13,14 @@ $(document).ready(function(){
 	});
 
 	$(".ct-ignition__button--edit").on("click", function(){
+		$("#input-title").removeAttr("disabled");
+		$("#input-title").focus();
 		$(".ct-ignition__button--confirm").removeClass("hide-action-button");
 		$(".ct-ignition__button--cancel").removeClass("hide-action-button");
 		$(this).addClass("hide-action-button");
 	});
 	$(".ct-ignition__button--confirm, .ct-ignition__button--cancel").on("click", function(){
+		$("#input-title").attr("disabled", "disabled");
 		$(".ct-ignition__button--confirm").addClass("hide-action-button");
 		$(".ct-ignition__button--cancel").addClass("hide-action-button");
 		$(".ct-ignition__button--edit").removeClass("hide-action-button");
