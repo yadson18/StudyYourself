@@ -97,11 +97,11 @@ class MaterialsController extends AppController
                 }
             }
         }
-
+        $categories = $this->Materials->Categories->find('list', ['limit' => 200]);
         $users = $this->Materials->Users->find('list', ['limit' => 200]);
         $role = $this->Auth->user('role');
-        $this->set(compact('material', 'users', 'page', 'role'));
-        $this->set('_serialize', ['material', 'page', 'role']);
+        $this->set(compact('material', 'users', 'page', 'role', 'categories'));
+        $this->set('_serialize', ['material', 'page', 'role', 'categories']);
     }
 
     /**

@@ -76,11 +76,12 @@ label{
     height:1px;
     overflow:hidden;
 }
-#input-title{
-	width: 66.66%;
-	margin: auto;
-	margin-top: 30px;
-	text-align: center;
-	font-size: 2em;
-	padding: 0;
+.title-categorie.col-md-5,
+.title-categorie.col-md-3{
+	padding-left: 0;
+	padding-right: 0; 
+}
+input.input-lg.form-control,
+select.input-lg.form-control{
+	border-radius: 0;
 }
