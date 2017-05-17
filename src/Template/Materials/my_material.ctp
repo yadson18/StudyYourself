@@ -5,7 +5,7 @@
             <div class="col-md-3 material col-sm-6 col-xs-8 col-md-offset-0 col-sm-offset-0 col-xs-offset-2">
                 <div class="content-size">
                     <h1 class="add-title">
-                        <a id="addNew" class="fa fa-plus-square" href="/materials/add"></a>
+                        <a id="addNew" class="fa fa-plus-square size" href="/materials/add"></a>
                     </h1>   
                 </div>   
             </div>

@@ -161,7 +161,8 @@
             $.get("/materials/add", 
               {
                 'title': $("#input-title").val(), 
-                'materialPage': ev.detail().regions.content
+                'category_id': $("#select-category").val(), 
+                'material_page': ev.detail().regions.content
               }, 
               function(data, status){ 
                 if(status === "success"){
@@ -183,12 +184,12 @@
           }
           else{
             editor.busy(true);
-            $.post("/materials/add", 
+            $.post("/materials/edit", 
               {
                 'material_id': material_id, 
                 'title': $("#input-title").val(), 
                 'pages_id': pages_id, 
-                'materialPage': ev.detail().regions.content
+                'material_page': ev.detail().regions.content
               }, 
               function(status){ 
                 saved = (function(_this) {

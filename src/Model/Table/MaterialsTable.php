@@ -41,13 +41,15 @@ class MaterialsTable extends Table
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('Users', [
-            'foreignKey' => 'user_id',
-            'joinType' => 'INNER'
-        ]);
-        $this->belongsTo('Categories', [
-            'foreignKey' => 'category_id'
-        ]);
+        $this->belongsTo(
+            'Users', [
+                'foreignKey' => 'user_id',
+                'joinType' => 'INNER'
+            ],
+            'Categories', [
+                'foreignKey' => 'category_id'
+            ]
+        );
         $this->hasMany('Pages', [
             'foreignKey' => 'material_id'
         ]);

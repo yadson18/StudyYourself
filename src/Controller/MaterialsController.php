@@ -57,15 +57,19 @@ class MaterialsController extends AppController
      */
     public function add()
     {   
+        $category = TableRegistry::get('Categories')->newEntity();
         $material = $this->Materials->newEntity();
         $page = TableRegistry::get('Pages')->newEntity();
 
         if ($this->request->is(['get']) && $_GET != null) {
+            $category->name = "Test";
+            TableRegistry::get('Categories')->save($category);
+
             $material->title = $_GET["title"];
             $material->user_id = $this->Auth->user('id');
-
+            $material->category_id = $_GET["category_id"];
             if ($this->Materials->save($material)) {
-                $page->data = $_GET["materialPage"];
+                $page->data = $_GET["material_page"];
                 $page->material_id = $material->id;
                 TableRegistry::get('Pages')->save($page);
 
@@ -77,7 +81,26 @@ class MaterialsController extends AppController
                 echo json_encode($json) . " ";
             }  
         }
-        else if($this->request->is(['patch', 'post', 'put'])){
+        $users = $this->Materials->Users->find('list', ['limit' => 200]);
+
+        $query = TableRegistry::get('Categories')->find('all')->all(); 
+        $categories = $query->toArray();
+
+        $role = $this->Auth->user('role');
+        $this->set(compact('material', 'users', 'page', 'role', 'categories'));
+        $this->set('_serialize', ['material', 'page', 'role', 'categories']);
+    }
+
+    /**
+     * Edit method
+     *
+     * @param string|null $id Material id.
+     * @return \Cake\Network\Response|null Redirects on successful edit, renders view otherwise.
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
+     */
+    public function edit($id = null)
+    {
+        if($this->request->is(['patch', 'post', 'put']) && ($id == null)){
             $get_pages = [];
 
             $get_material = $this->Materials->get($_POST["material_id"], [
@@ -96,34 +119,6 @@ class MaterialsController extends AppController
                     TableRegistry::get('Pages')->save($page);
                 }
             }
-        }
-        $categories = $this->Materials->Categories->find('list', ['limit' => 200]);
-        $users = $this->Materials->Users->find('list', ['limit' => 200]);
-        $role = $this->Auth->user('role');
-        $this->set(compact('material', 'users', 'page', 'role', 'categories'));
-        $this->set('_serialize', ['material', 'page', 'role', 'categories']);
-    }
-
-    /**
-     * Edit method
-     *
-     * @param string|null $id Material id.
-     * @return \Cake\Network\Response|null Redirects on successful edit, renders view otherwise.
-     * @throws \Cake\Network\Exception\NotFoundException When record not found.
-     */
-    public function edit($id = null)
-    {
-        $material = $this->Materials->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $material = $this->Materials->patchEntity($material, $this->request->getData());
-            if ($this->Materials->save($material)) {
-                $this->Flash->success(__('The material has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The material could not be saved. Please, try again.'));
         }
         $users = $this->Materials->Users->find('list', ['limit' => 200]);
         $role = $this->Auth->user('role');
