@@ -27,6 +27,54 @@ $(document).ready(function(){
 	});
 
 	$(".new-category").on("click", function(){
-		alert("Funcionalidade não implementada.");
+		var options = "";
+		$.get("/materials/getCategories", 
+            function(data, status){ 
+            	var json = JSON.parse(data);
+
+            	for(var i = 0; i < json.length; i++){
+               		options += "<option value=" + json[i]['id'] + ">" + json[i]['name'] + "</option> "; 
+            	}
+
+            	if($("#box")){
+            		$("#box").remove();
+            	}
+
+            	$("#pop-up").append(
+            		"<div id='box'>" +
+	            		"<a href='#' id='close'>X</a>" +
+	            		"<input type='text' name='name' aria-label='Digite o nome da categoria' class='form-control input-lg' placeholder='Digite o nome da categoria' required>" +
+	            		"<select name='parent_id' class='form-control input-lg'>" + 
+	            			"<option value=''>Não contém sub categoria</option>" +
+	            			options + 
+	            		"</select>" +
+	            		"<button id='addCategory' class='form-control input-lg'>Cadastrar categoria</button>" +
+	            	"</div>"
+            	);
+
+            	$("#close").on("click", function(){
+            		$("#box").remove();
+            	});
+
+            	$("#addCategory").on("click", function(){
+					if($("input[name=name]").val() != ""){
+						$.post("/materials/addCategory", 
+							{
+								'name': $("input[name=name]").val(),
+								'parent_id': $("select[name=parent_id]").val()
+							},
+				            function(data, status){ 
+				            	if (status === 'success') {
+				            		alert("Categoria cadastrada com secesso.");
+				            	}
+				            }
+			        	);
+					}
+					else{
+						$("input[name=name]").focus()
+					}
+				});
+            }
+        );
 	});
 });

@@ -5,6 +5,7 @@
 ?>
 <div class="content">
 	<h1 class="title"><?= __('Adicionar Conteúdo') ?></h1>
+	<div id="pop-up" class="col-md-4 col-md-offset-4"></div>
 	<div class="col-md-5 col-md-offset-2 title-categorie">
 		<input aria-label="Digite o título do conteúdo" placeholder="Digite o título do conteúdo" id="input-title" class="form-control input-lg" type="text" disabled="disabled">
 	</div>

@@ -76,26 +76,44 @@ class CategoriesController extends AppController
         return $parent->name;
     }
 
+    public function getCategories()
+    {
+        if ($this->request->is('get')) {
+            $query = $this->Categories->find('all')->all(); 
+            $query = $query->toArray();
+            $json_categories = [];
+            for ($i = 0; $i < sizeof($query); $i++) { 
+               $json_categories[$i] = ['id' => $query[$i]['id'], 'name' => $query[$i]['name']];
+            }
+
+            echo json_encode($json_categories);
+        }
+
+        $parentCategories = $this->Categories->ParentCategories->find('list', ['limit' => 200]);
+        $this->set(compact('category', 'parentCategories'));
+        $this->set('_serialize', ['category']);
+    }
+
     public function add()
     {
         $category = $this->Categories->newEntity();
         if ($this->request->is('post')) {
             $category = $this->Categories->patchEntity($category, $this->request->getData());
             if ($this->Categories->save($category)) {
-                if($category->parent_id != null){
+                /*if($category->parent_id != null){
                     debug($this->getParent($category));
-                }
+                }*/
                 
             
-                $this->Flash->success(__('The category has been saved.'));
+                //$this->Flash->success(__('The category has been saved.'));
 
                 //return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The category could not be saved. Please, try again.'));
+            //$this->Flash->error(__('The category could not be saved. Please, try again.'));
         }
-        $parentCategories = $this->Categories->ParentCategories->find('list', ['limit' => 200]);
-        $this->set(compact('category', 'parentCategories'));
-        $this->set('_serialize', ['category']);
+        //$parentCategories = $this->Categories->ParentCategories->find('list', ['limit' => 200]);
+        //$this->set(compact('category', 'parentCategories'));
+        //$this->set('_serialize', ['category']);
     }
 
     /**

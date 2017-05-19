@@ -57,14 +57,10 @@ class MaterialsController extends AppController
      */
     public function add()
     {   
-        $category = TableRegistry::get('Categories')->newEntity();
         $material = $this->Materials->newEntity();
         $page = TableRegistry::get('Pages')->newEntity();
 
         if ($this->request->is(['get']) && $_GET != null) {
-            $category->name = "Test";
-            TableRegistry::get('Categories')->save($category);
-
             $material->title = $_GET["title"];
             $material->user_id = $this->Auth->user('id');
             $material->category_id = $_GET["category_id"];
@@ -89,6 +85,61 @@ class MaterialsController extends AppController
         $role = $this->Auth->user('role');
         $this->set(compact('material', 'users', 'page', 'role', 'categories'));
         $this->set('_serialize', ['material', 'page', 'role', 'categories']);
+    }
+
+    /*public function getParent($category)
+    {
+        $parent = $this->Categories->get(h($category->parent_id), [
+            'contain' => []
+        ]);
+
+        $name = [];
+        $index = 0; 
+
+        $name[$index] = $parent->name;
+        if($parent->parent_id != null){
+            while(true){
+                $parent = $this->Categories->get(h($parent->parent_id), [
+                    'contain' => []
+                ]);
+
+                $name[++$index] = $parent->name;
+
+                if($parent->parent_id == null){
+                    return $name;
+                    break;
+                }
+            }
+        }
+        return $parent->name;
+    }*/
+
+    public function getCategories()
+    {
+        if ($this->request->is('get')) {
+            $query = TableRegistry::get('Categories')->find('all')->all(); 
+            $query = $query->toArray();
+            $json_categories = [];
+            for ($i = 0; $i < sizeof($query); $i++) { 
+               $json_categories[$i] = ['id' => $query[$i]['id'], 'name' => $query[$i]['name']];
+            }
+
+            echo json_encode($json_categories);
+        }
+
+        $parentCategories = TableRegistry::get('Categories')->ParentCategories->find('list', ['limit' => 200]);
+        $this->set(compact('category', 'parentCategories'));
+        $this->set('_serialize', ['category']);
+    }
+
+    public function addCategory()
+    {
+        $category = TableRegistry::get('Categories')->newEntity();
+        if ($this->request->is('post')) {
+            $category->name = $_POST['name'];
+            $category->parent_id = $_POST['parent_id'];
+            TableRegistry::get('Categories')->save($category);
+        }
     }
 
     /**

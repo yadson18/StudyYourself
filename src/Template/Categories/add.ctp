@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 /**
   * @var \App\View\AppView $this
   */
@@ -26,3 +26,4 @@
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
 </div>
+ -->

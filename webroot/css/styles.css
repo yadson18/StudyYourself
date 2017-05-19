@@ -98,3 +98,22 @@ input.input-lg.form-control,
 select.input-lg.form-control{
 	border-radius: 0;
 }
+#pop-up.col-md-4{
+	position: absolute;
+	z-index: 2;
+	margin: auto;
+	margin-left: 23.33%;
+}
+#box{
+	background-color: #00affa;
+	padding: 8px;
+}
+#box input,
+#box select,
+#box button{
+	margin-bottom: 6px;
+}
+#box a{
+	color: white;
+	font-weight: bold;
+}
