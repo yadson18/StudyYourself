@@ -137,7 +137,12 @@ class MaterialsController extends AppController
         $category = TableRegistry::get('Categories')->newEntity();
         if ($this->request->is('post')) {
             $category->name = $_POST['name'];
-            $category->parent_id = $_POST['parent_id'];
+            if(!$_POST['parent_id']){
+                $category->parent_id = null;    
+            }
+            else{
+                $category->parent_id = $_POST['parent_id'];
+            }
             TableRegistry::get('Categories')->save($category);
         }
     }

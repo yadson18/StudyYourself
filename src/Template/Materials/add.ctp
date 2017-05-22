@@ -11,6 +11,9 @@
 	</div>
 	<div class="col-md-3 title-categorie">
 		<select class="col-md-10 btn btn-default input-lg" id="select-category" disabled="disabled">
+			<?php if(!$categories): ?>
+				<option value="">Cadastre uma categoria</option>
+			<?php endif; ?>
 			<?php foreach ($categories as $category): ?>
 	    		<option value=<?= $category->id ?> > <?= $category->name ?> </option>
 	    	<?php endforeach; ?>
