@@ -105,8 +105,9 @@ select.input-lg.form-control{
 	margin-left: 23.33%;
 }
 #box{
-	background-color: #00affa;
-	padding: 8px;
+	background-color: #2e8ece;
+	padding: 40px 12px 8px 12px;
+	border-radius: 4px;
 }
 #box input,
 #box select,
@@ -115,5 +116,15 @@ select.input-lg.form-control{
 }
 #box a{
 	color: white;
-	font-weight: bold;
+	position: absolute;
+	left: 91%;
+	top: 5px;
+	padding: 5px 10px 5px 10px;
+	font-size: 1.5em;
+}
+#box #addCategory{
+	margin-top: 9px;
+}
+#box a:focus, #box a:hover{
+	text-decoration: none;
 }

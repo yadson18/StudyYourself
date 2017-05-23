@@ -5978,18 +5978,37 @@
     IgnitionUI.prototype._addDOMEventListeners = function() {
       this._domEdit.addEventListener('click', (function(_this) {
         return function(ev) {
+          var select, input;
+
+          select = document.getElementById("select-category");
+          input = document.getElementById("input-title");
+          
+          input.removeAttribute("disabled");
+          if(select.options[select.selectedIndex].value){
+            select.removeAttribute("disabled");
+          }
+          input.focus();
+
+          $(".ct-ignition__button--confirm, .ct-ignition__button--cancel").removeClass("hide-action-button");
+          $(this).addClass("hide-action-button");
           ev.preventDefault();
           return _this.edit();
         };
       })(this));
       this._domConfirm.addEventListener('click', (function(_this) {
         return function(ev) {
+          $("#input-title, #select-category").attr("disabled", "disabled");
+          $(".ct-ignition__button--confirm, .ct-ignition__button--cancel").addClass("hide-action-button");
+          $(".ct-ignition__button--edit").removeClass("hide-action-button");
           ev.preventDefault();
           return _this.confirm();
         };
       })(this));
       return this._domCancel.addEventListener('click', (function(_this) {
         return function(ev) {
+          $("#input-title, #select-category").attr("disabled", "disabled");
+          $(".ct-ignition__button--confirm, .ct-ignition__button--cancel").addClass("hide-action-button");
+          $(".ct-ignition__button--edit").removeClass("hide-action-button");
           ev.preventDefault();
           return _this.cancel();
         };

@@ -16,21 +16,6 @@ $(document).ready(function(){
 		$(this).toggleClass("material-content-mouseOver");
 	});
 
-	$(".ct-ignition__button--edit").on("click", function(){
-		$("#input-title").removeAttr("disabled");
-		if($("#select-category").val()){
-			$("#select-category").removeAttr("disabled");
-		}
-		$("#input-title").focus();
-		$(".ct-ignition__button--confirm, .ct-ignition__button--cancel").removeClass("hide-action-button");
-		$(this).addClass("hide-action-button");
-	});
-	$(".ct-ignition__button--confirm, .ct-ignition__button--cancel").on("click", function(){
-		$("#input-title, #select-category").attr("disabled", "disabled");
-		$(".ct-ignition__button--confirm, .ct-ignition__button--cancel").addClass("hide-action-button");
-		$(".ct-ignition__button--edit").removeClass("hide-action-button");
-	});
-
 	function updateOptions(select_id, options){
 		$(select_id).empty();
 		$(select_id).append(options);
@@ -81,7 +66,7 @@ $(document).ready(function(){
             $("#box").remove();
             $("#pop-up").append(
 	            "<div id='box'>" +
-		           	"<a href='#' id='close'>X</a>" +
+		           	"<a href='#' class='fa fa-times-circle' aria-hidden='true' id='close'></a>" +
 		           	"<input type='text' name='name' aria-label='Digite o nome da categoria' class='form-control input-lg' placeholder='Digite o nome da categoria' required>" +
 		           	"<select name='parent_id' class='form-control input-lg'>" + 
 		           		"<option value=''>Não contém sub categoria</option>" +
@@ -95,7 +80,7 @@ $(document).ready(function(){
         	$("#box").remove();
             $("#pop-up").append(
 	            "<div id='box'>" +
-		           	"<a href='#' id='close'>X</a>" +
+		           	"<a href='#' class='fa fa-times-circle' aria-hidden='true' id='close'></a>" +
 		           	"<input type='text' name='name' aria-label='Digite o nome da categoria' class='form-control input-lg' placeholder='Digite o nome da categoria' required>" +
 		           	"<select name='parent_id' class='form-control input-lg'>" + 
 		           		"<option value=''>Não contém sub categoria</option>" +
