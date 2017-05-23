@@ -1,0 +1,15 @@
+.container{
+	margin-left: 37%;
+	margin-top: 7%;
+	padding: 10px;
+}
+h3{
+	text-align: center;
+}
+.form-signin{
+	background-color: #EAEAAE;
+	padding-bottom: 30px;
+}
+.btn{
+	background-color: #000000;
+}
