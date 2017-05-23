@@ -151,7 +151,11 @@
     editor.init('[data-editable], [data-fixture]', 'data-name');
     editor.addEventListener('saved', function(ev) {
       var saved, materialContent = " ";
-      if ((Object.keys(ev.detail().regions).length === 0) && ($("#input-title").val() === "")) {
+      if (
+        Object.keys(ev.detail().regions).length === 0 && 
+        $("#input-title").val() === "" ||
+        $("#input-title").val().search(/[!@#$%&*|\\\/{}'|_£¢¬:;,.=+§.<>`'~^?]/igm) === 0
+      ){
         return;
       }
       else{

@@ -49,11 +49,19 @@ $(document).ready(function(){
             		}
             		
             		updateOptions("#select-category", options);
+            		$("#select-category").removeAttr("disabled");
             	}
             	return false;
         	}
         );
     }
+
+    function findExpression(word, expression){
+		if(word.search(expression) === 0){
+			return true;
+		}
+		return false;
+	}
 
     /*Windows = {
     	'create': function(element_id, content){
@@ -102,8 +110,11 @@ $(document).ready(function(){
         });
 
         $("#addCategory").on("click", function(){
-        	if($("input[name=name]").val() != ""){
-				$.post("/materials/addCategory", 
+        	if(
+        		$("input[name=name]").val() != "" && 
+        		!findExpression($("input[name=name]").val(), /[!@#$%&*|\\\/{}'|_£¢¬:;,.=+§.<>`'~^?]/igm)
+        	){
+        		$.post("/materials/addCategory", 
 					{
 						'name': $("input[name=name]").val(),
 						'parent_id': $("select[name=parent_id]").val()

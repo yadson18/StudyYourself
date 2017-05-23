@@ -8402,7 +8402,7 @@
       if (!this.isMounted()) {
         return;
       }
-      this._domElement.parentNode.removeChild(this._domElement);
+      /*this._domElement.parentNode.removeChild(this._domElement);*/
       this._domElement = null;
       this._removeDOMEventListeners();
       this._ignition = null;
