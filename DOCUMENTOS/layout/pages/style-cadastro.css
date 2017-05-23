@@ -1,0 +1,23 @@
+.container{
+	background-color: #cdeaee;
+	padding-bottom: 30px;
+	margin-left: 35%;
+}
+.form-group{
+	min-width: 300px;
+	box-sizing: border-box;
+}
+.btn-primary{
+	margin: 0px;
+	background-color: #213b64;
+}
+.link{
+	text-align: center;
+	padding-top: 10px;
+}
+.link a{
+	font-size: 1.2em;
+}
+h2{
+	text-align: center;
+}
