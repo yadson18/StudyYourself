@@ -16,7 +16,7 @@ $(document).ready(function(){
 		$(this).toggleClass("material-content-mouseOver");
 	});
 
-	function updateOptions(select_id, options){
+	function updateOptionsCategories(select_id, options){
 		$(select_id).empty();
 		$(select_id).append(options);
 	}
@@ -33,7 +33,7 @@ $(document).ready(function(){
                			options += "<option value=" + json[i]['id'] + ">" + json[i]['name'] + "</option> "; 
             		}
             		
-            		updateOptions("#select-category", options);
+            		updateOptionsCategories("#select-category", options);
             		$("#select-category").removeAttr("disabled");
             	}
             	return false;
@@ -47,17 +47,6 @@ $(document).ready(function(){
 		}
 		return false;
 	}
-
-    /*Windows = {
-    	'create': function(element_id, content){
-    		console.log(element_id + "  " + content);
-    	},
-    	'close': function(){
-
-    	}
-    };
-    Windows.create("1", "Yadson");
-    */
 
 	$(".new-category").on("click", function(){
 		var options = $("#select-category")[0];

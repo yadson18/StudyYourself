@@ -5931,6 +5931,7 @@
     IgnitionUI.prototype.mount = function() {
       IgnitionUI.__super__.mount.call(this);
       this._domElement = this.constructor.createUl(['ct-widget', 'ct-ignition', 'ct-ignition--ready', 'col-md-2', 'col-sm-2', 'col-xs-2']);
+      this._domElement.setAttribute("tabindex", "1");
       this.parent().domElement().appendChild(this._domElement);
       this._domEdit = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--edit', 'col-md-1', 'col-sm-1', 'col-xs-1']);
       this._domElement.appendChild(this._domEdit);
@@ -5976,43 +5977,51 @@
     };
 
     IgnitionUI.prototype._addDOMEventListeners = function() {
-      this._domEdit.addEventListener('click', (function(_this) {
-        return function(ev) {
-          var select, input;
+      var events = ['keydown', 'click'];
+      for(var i = 0; i < events.length; i++){
+        this._domEdit.addEventListener(events[i], (function(_this) {
+          return function(ev) {
+            console.log("Edit: " + ev);
+            var select, input;
 
-          select = document.getElementById("select-category");
-          input = document.getElementById("input-title");
-          
-          input.removeAttribute("disabled");
-          if(select.options[select.selectedIndex].value){
-            select.removeAttribute("disabled");
-          }
-          input.focus();
+            select = document.getElementById("select-category");
+            input = document.getElementById("input-title");
+            
+            input.removeAttribute("disabled");
+            if(select.options[select.selectedIndex].value){
+              select.removeAttribute("disabled");
+            }
+            input.focus();
 
-          $(".ct-ignition__button--confirm, .ct-ignition__button--cancel").removeClass("hide-action-button");
-          $(this).addClass("hide-action-button");
-          ev.preventDefault();
-          return _this.edit();
-        };
-      })(this));
-      this._domConfirm.addEventListener('click', (function(_this) {
-        return function(ev) {
-          $("#input-title, #select-category").attr("disabled", "disabled");
-          $(".ct-ignition__button--confirm, .ct-ignition__button--cancel").addClass("hide-action-button");
-          $(".ct-ignition__button--edit").removeClass("hide-action-button");
-          ev.preventDefault();
-          return _this.confirm();
-        };
-      })(this));
-      return this._domCancel.addEventListener('click', (function(_this) {
-        return function(ev) {
-          $("#input-title, #select-category").attr("disabled", "disabled");
-          $(".ct-ignition__button--confirm, .ct-ignition__button--cancel").addClass("hide-action-button");
-          $(".ct-ignition__button--edit").removeClass("hide-action-button");
-          ev.preventDefault();
-          return _this.cancel();
-        };
-      })(this));
+            $(".ct-ignition__button--confirm, .ct-ignition__button--cancel").removeClass("hide-action-button");
+            $(this).addClass("hide-action-button");
+            ev.preventDefault();
+            return _this.edit();
+          };
+        })(this));
+      
+        this._domConfirm.addEventListener(events[i], (function(_this) {
+          return function(ev) {
+            console.log("Confirm: " + ev);
+            $("#input-title, #select-category").attr("disabled", "disabled");
+            $(".ct-ignition__button--confirm, .ct-ignition__button--cancel").addClass("hide-action-button");
+            $(".ct-ignition__button--edit").removeClass("hide-action-button");
+            ev.preventDefault();
+            return _this.confirm();
+          };
+        })(this));
+      
+        this._domCancel.addEventListener(events[i], (function(_this) {
+          return function(ev) {
+            console.log("Cancel: " + ev);
+            $("#input-title, #select-category").attr("disabled", "disabled");
+            $(".ct-ignition__button--confirm, .ct-ignition__button--cancel").addClass("hide-action-button");
+            $(".ct-ignition__button--edit").removeClass("hide-action-button");
+            ev.preventDefault();
+            return _this.cancel();
+          };
+        })(this));
+      }
     };
 
     return IgnitionUI;
