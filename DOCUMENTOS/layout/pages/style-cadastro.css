@@ -1,11 +1,15 @@
-.container{
-	background-color: #cdeaee;
+body{
+	background: #DCDCDC;
+}
+.container-fluid{
+	background-color: #DCDCDC;
 	padding-bottom: 30px;
 	margin-left: 35%;
 }
 .form-group{
 	min-width: 300px;
 	box-sizing: border-box;
+	margin-bottom: 22px;
 }
 .btn-primary{
 	margin: 0px;
@@ -20,4 +24,11 @@
 }
 h2{
 	text-align: center;
+}
+a{
+	color: black;
+}
+.btn-group-lg>.btn, .btn-lg{
+	border-radius: 8px;
+	background-color: #fff;
 }

@@ -1,15 +1,27 @@
-.container{
-	margin-left: 37%;
-	margin-top: 7%;
-	padding: 10px;
+body{
+	background: #DCDCDC;
 }
-h3{
+h2{
 	text-align: center;
 }
 .form-signin{
-	background-color: #EAEAAE;
+	background-color: #DCDCDC;
 	padding-bottom: 30px;
 }
 .btn{
-	background-color: #000000;
+	background-color: #D3D3D3;
+	margin: 15px;
+}
+.container-fluid{
+	margin-top: 12%;
+}
+.id{
+	border-radius: 30px;
+}
+.btn-group-lg>.btn, .btn-lg{
+	border-radius: 8px;
+	background-color: #fff;
+}
+.form-control{
+	margin: 15px;
 }
