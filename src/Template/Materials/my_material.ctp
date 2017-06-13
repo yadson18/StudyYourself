@@ -5,13 +5,13 @@
             <div class="col-md-3 material col-sm-6 col-xs-8 col-md-offset-0 col-sm-offset-0 col-xs-offset-2">
                 <div class="content-size">
                     <h1 class="add-title">
-                        <a id="addNew" class="fa fa-plus-square size" href="/materials/add"></a>
+                        <a id="addNew" class="fa fa-plus-square size" href="/materials/add" tabindex="8"></a>
                     </h1>   
                 </div>   
             </div>
         <?php endif; ?>
-        <?php foreach ($materials as $material): ?>
-            <a title="<?= $material->title ?>" href="/materials/view/<?= $material->id ?>">
+        <?php foreach ($materials as $i => $material): ?>
+            <a title="<?= $material->title ?>" href="/materials/view/<?= $material->id ?>" tabindex="<?= ($i + 9) ?>">
                 <?php foreach ($material->pages as $page): ?>
                     <div class="col-md-3 material col-sm-6 col-xs-8 col-md-offset-0 col-sm-offset-0 col-xs-offset-2">
                         <div class="material-content content-size">

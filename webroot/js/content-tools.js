@@ -5931,6 +5931,7 @@
     IgnitionUI.prototype.mount = function() {
       IgnitionUI.__super__.mount.call(this);
       this._domElement = this.constructor.createUl(['ct-widget', 'ct-ignition', 'ct-ignition--ready', 'col-md-2', 'col-sm-2', 'col-xs-2']);
+      //$this._domElement.setAttribute("tabindex", "2");
       this.parent().domElement().appendChild(this._domElement);
       this._domEdit = this.constructor.createLi(['ct-ignition__button', 'ct-ignition__button--edit', 'col-md-1', 'col-sm-1', 'col-xs-1']);
       this._domElement.appendChild(this._domEdit);

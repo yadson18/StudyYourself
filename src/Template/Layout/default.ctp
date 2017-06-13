@@ -44,30 +44,43 @@
                 <div id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="/materials/">Home</a>
+                            <a href="/materials/" tabindex="1">Home</a>
                         </li>
                         <li>
-                            <a href="#">Categorias</a>
+                            <a href="#" tabindex="2">Categorias</a>
                         </li>
                         <li>
-                            <a href="#">Favoritos</a>
+                            <a href="#" tabindex="3">Favoritos</a>
                         </li>
                         <?php if($role == 'colaborador'): ?>
                             <li>
-                                <a href="/materials/myMaterial">Minhas Aulas</a>
+                                <a href="/materials/myMaterial" tabindex="4">Minhas Aulas</a>
                             </li>
                         <?php endif; ?>
                     </ul>
-                    <form class="navbar-form navbar-right">
-                        <div class="input-group">
-                            <input type="search" class="form-control" aria-label="Faça sua busca aqui" placeholder="Faça sua busca aqui">
-                            <div class="input-group-btn">
-                                <button type="submit" class="fa fa-search btn btn-default" aria-hidden="true">
-                                </button>
+                    <?php if($role == 'colaborador'): ?>
+                        <form class="navbar-form navbar-right">
+                            <div class="input-group">
+                                <input type="search" class="form-control" aria-label="Faça sua busca aqui" placeholder="Faça sua busca aqui" tabindex="5">
+                                <div class="input-group-btn">
+                                    <button type="submit" class="fa fa-search btn btn-default" aria-hidden="true" tabindex="6">
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <a class="fa fa-sign-out btn btn-default" aria-hidden="true" href="/users/logout"></a>
-                    </form>
+                            <a class="fa fa-sign-out btn btn-default" aria-hidden="true" href="/users/logout" tabindex="7"></a>
+                        </form>
+                    <?php else: ?>
+                        <form class="navbar-form navbar-right">
+                            <div class="input-group">
+                                <input type="search" class="form-control" aria-label="Faça sua busca aqui" placeholder="Faça sua busca aqui" tabindex="4">
+                                <div class="input-group-btn">
+                                    <button type="submit" class="fa fa-search btn btn-default" aria-hidden="true" tabindex="5">
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="fa fa-sign-out btn btn-default" aria-hidden="true" href="/users/logout" tabindex="6"></a>
+                        </form>
+                    <?php endif; ?>
                 </div>
             </div>
         </nav>

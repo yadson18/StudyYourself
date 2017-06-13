@@ -1,22 +1,11 @@
 $(document).ready(function(){
-	/*console.log($("nav"));
-
-	for(var domElement in $("nav").childNodes){
-		console.log(domElement.childNodes);
-		domElement.childNodes.attr("tabindex", "1");
-	}*/
-	$("ul.ct-ignition").attr("tabindex", "1");
+	/*$("ul.ct-ignition").attr("tabindex", "1");
 	var index = 2;
 	var elements = $("ul.ct-ignition li");
-	//console.log($("ul.ct-ignition").children());
-		//var element = $("ul.ct-ignition li")[0]['className'];
 	for(var i = 0; i < elements.length; i++){
-		//$("ul.ct-ignition li")[0].attr("tabindex", "'" + i + "'");
-		// /var result = ;
 		console.log(elements[i]['className'].split(/\s+/)[1]);
 		$("." + elements[i]['className'].split(/\s+/)[1]).attr("tabindex", index++);
-		//console.log();
-	}
+	}*/
 
 	// Define o tamanho inicial da janela de pré-vizualização dos materiais, baseado na largura da janela.
 	$(".content-size").css({"height": ($('.material-content').width() - 20) + "px"});

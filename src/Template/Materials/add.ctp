@@ -7,10 +7,10 @@
 	<h1 class="title"><?= __('Adicionar Conteúdo') ?></h1>
 	<div id="pop-up" class="col-md-4 col-md-offset-4"></div>
 	<div class="col-md-5 col-md-offset-2 title-categorie">
-		<input aria-label="Digite o título do conteúdo" placeholder="Digite o título do conteúdo" id="input-title" class="form-control input-lg" type="text" disabled="disabled">
+		<input aria-label="Digite o título do conteúdo" placeholder="Digite o título do conteúdo" id="input-title" class="form-control input-lg" type="text" disabled="disabled" tabindex="8">
 	</div>
 	<div class="col-md-3 title-categorie">
-		<select class="col-md-10 btn btn-default input-lg" id="select-category" disabled="disabled">
+		<select class="col-md-10 btn btn-default input-lg" id="select-category" disabled="disabled" tabindex="9">
 			<?php if(!$categories): ?>
 				<option value="">Cadastre uma categoria</option>
 			<?php endif; ?>
@@ -18,7 +18,7 @@
 	    		<option value=<?= $category->id ?> > <?= $category->name ?> </option>
 	    	<?php endforeach; ?>
 	    </select>
-	    <a href="#" class="fa fa-plus-square col-md-2 new-category" id="addNew"></a>
+	    <a href="#" class="fa fa-plus-square col-md-2 new-category" id="addNew" tabindex="10"></a>
 	</div>
 	<div class="row col-md-8 col-md-offset-2 editor-row">
 	    <div id="editor">
