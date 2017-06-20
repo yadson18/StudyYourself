@@ -128,3 +128,91 @@ select.input-lg.form-control{
 #box a:focus, #box a:hover{
 	text-decoration: none;
 }
+
+
+
+/* New Styles */
+
+#acessible-nav{
+	text-align: center;
+	background-color: #f8f8f8;
+	border: 1px solid transparent;
+	border-color: #e7e7e7;
+	min-height: 42px;
+}
+#acessible-nav div{
+	padding-left: 0;
+	padding-right: 0;
+}
+#acessible-nav ul{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#acessible-nav ul li{
+	display: inline;
+}
+#acessible-nav ul li a{
+	padding: 10px 2px 10px 2px;
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif;
+}
+#contraste{
+	margin-left: 20px;
+}
+#atalho-1-2 li:nth-child(1){
+	margin-right: 15px;
+}
+#acessible-nav #minus i,
+#acessible-nav #plus i{
+	font-size: 0.5em;
+	position: relative;
+	bottom: 5px;
+}
+#plus{
+	font-size: 1.1em;
+}
+#minus{
+	font-size: 1em;
+}
+#on i,
+#off i{
+	position: relative;
+	top: 2px;
+	font-size: 1.3em;
+}
+#main-menu div.input-group{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#main-menu .navbar-nav > li > a{
+	padding-top: 16px;
+	padding-bottom: 16px;
+	color: white;
+	font-size: 1.1em;
+	font-family: sans-serif;
+}
+#main-menu{
+	background-color: #1E85DF;
+}
+#main-menu .border{
+	border-left: solid 1px #4158C8;
+	border-right: solid 1px #4158C8;
+}
+#search{
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 380px;
+}
+#search .input-group-btn button.btn{
+	font-size: 16px;
+	padding: 5px 12px;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}

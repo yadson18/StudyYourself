@@ -39,53 +39,83 @@
 </head>
 <body>
     <?php if($this->templatePath != 'Users'): ?>
-        <nav class="navbar navbar-default" data-topbar role="navigation">
-            <div>
-                <div id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/materials/" tabindex="1">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" tabindex="2">Categorias</a>
-                        </li>
-                        <li>
-                            <a href="#" tabindex="3">Favoritos</a>
-                        </li>
-                        <?php if($role == 'colaborador'): ?>
-                            <li>
-                                <a href="/materials/myMaterial" tabindex="4">Minhas Aulas</a>
-                            </li>
-                        <?php endif; ?>
-                    </ul>
-                    <?php if($role == 'colaborador'): ?>
-                        <form class="navbar-form navbar-right">
-                            <div class="input-group">
-                                <input type="search" class="form-control" aria-label="Faça sua busca aqui" placeholder="Faça sua busca aqui" tabindex="5">
-                                <div class="input-group-btn">
-                                    <button type="submit" class="fa fa-search btn btn-default" aria-hidden="true" tabindex="6">
-                                    </button>
-                                </div>
-                            </div>
-                            <a class="fa fa-sign-out btn btn-default" aria-hidden="true" href="/users/logout" tabindex="7"></a>
-                        </form>
-                    <?php else: ?>
-                        <form class="navbar-form navbar-right">
-                            <div class="input-group">
-                                <input type="search" class="form-control" aria-label="Faça sua busca aqui" placeholder="Faça sua busca aqui" tabindex="4">
-                                <div class="input-group-btn">
-                                    <button type="submit" class="fa fa-search btn btn-default" aria-hidden="true" tabindex="5">
-                                    </button>
-                                </div>
-                            </div>
-                            <a class="fa fa-sign-out btn btn-default" aria-hidden="true" href="/users/logout" tabindex="6"></a>
-                        </form>
-                    <?php endif; ?>
-                </div>
+        <nav id="acessible-nav">
+            <div class="col-md-4">
+                <ul id="atalho-1-2">
+                    <li>
+                        <a href="">Ir para o conteúdo (ALT + 1)</a>
+                    </li>
+                    <li>
+                        <a href="">Ir para o menu (ALT + 2)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li id="minus">
+                        <a href="">A <i class="fa fa-minus" aria-hidden="true"></i></a>
+                    </li>
+                    <li id="plus">
+                        <a href="">A <i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </li>
+                    <li id="contraste">
+                        <span>Alto Contraste</span>
+                    </li>
+                    <li id="on">
+                        <a href=""><i class="fa fa-circle" aria-hidden="true"></i></a>
+                    </li>
+                    <li id="off">
+                        <a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul id="atalho-3">
+                    <li class="col-md-10">
+                        <a href="">Acessibilidade deste site (ALT + 3)</a>
+                    </li>
+                    <li class="col-md-2">
+                        <a href="/users/logout">SAIR <i class="fa fa-sign-out"></i></a>
+                    </li>
+                </ul>
             </div>
         </nav>
-        <?= $this->Flash->render() ?>
+        <nav class="navbar navbar-default" role="navigation" id="main-menu">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="/materials/">Início</a></li>
+                <li class="border"><a href="#">Disciplinas</a></li>
+                <?php if($role == 'colaborador'): ?>
+                    <li>
+                        <a href="/materials/myMaterial">Meus conteúdos</a>
+                    </li>
+                <?php endif; ?>
+                <li id="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" aria-label="..." placeholder="Faça sua busca aqui" id="input-search">
+                      <div class="input-group-btn">
+                        <button type="submit" class="btn btn-default" id="search-icon">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                </li>
+                <li><a href="#">Quem somos</a></li>
+                <li class="border"><a href="#">Acessibilidade</a></li>
+                <li><a href="#">Minha conta</a></li>
+              </ul>
+            </div>
+        </nav>
     <?php endif; ?>
+    <?= $this->Flash->render() ?>
     <?php  if($this->templatePath != 'Users'): ?>
         <div class="container-fluid">
             <?= $this->fetch('content') ?>
