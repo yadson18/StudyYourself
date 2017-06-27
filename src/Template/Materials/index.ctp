@@ -3,8 +3,12 @@
   * @var \App\View\AppView $this
   */
 ?>
-<div class="content">
-    <h1 class="title"><?= __('Destaques') ?></h1>
+<div>
+    <div id="banner-destaques">
+        <h1>Estude online de forma fácil</h1>
+    </div>
+
+    <!-- <h1 class="title"><?= __('Destaques') ?></h1>
     <div class="row h-100 w-100">
         <?php foreach ($materials as $i => $material): ?>
             <?php if($role == 'colaborador'): ?>
@@ -37,5 +41,5 @@
             <?= $this->Paginator->last(__('last') . ' >>') ?>
         </ul>
         <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
-    </div>
+    </div> -->
 </div>

@@ -39,8 +39,8 @@
 </head>
 <body>
     <?php if($this->templatePath != 'Users'): ?>
-        <nav id="acessible-nav">
-            <div class="col-md-4">
+        <nav id="acessible-nav" class="navbar navbar-default">
+            <div class="acessible-block col-md-4 col-sm-12 col-xm-12">
                 <ul id="atalho-1-2">
                     <li>
                         <a href="">Ir para o conteúdo (ALT + 1)</a>
@@ -50,7 +50,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="acessible-block col-md-4 col-sm-12 col-xm-12">
                 <ul>
                     <li id="minus">
                         <a href="">A <i class="fa fa-minus" aria-hidden="true"></i></a>
@@ -69,12 +69,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="acessible-block col-md-4 col-sm-12 col-xm-12">
                 <ul id="atalho-3">
-                    <li class="col-md-10">
+                    <li>
                         <a href="">Acessibilidade deste site (ALT + 3)</a>
                     </li>
-                    <li class="col-md-2">
+                    <li id="logout">
                         <a href="/users/logout">SAIR <i class="fa fa-sign-out"></i></a>
                     </li>
                 </ul>
@@ -117,7 +117,7 @@
     <?php endif; ?>
     <?= $this->Flash->render() ?>
     <?php  if($this->templatePath != 'Users'): ?>
-        <div class="container-fluid">
+        <div class="content-page">
             <?= $this->fetch('content') ?>
         </div>
     <?php else: ?>
