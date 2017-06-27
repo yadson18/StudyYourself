@@ -7,6 +7,10 @@
     <div id="banner-destaques">
         <h1>Estude online de forma fácil</h1>
     </div>
+    <div id="float-div-options">
+        <button class="btn btn-primary">Opt 1</button>
+        <button class="btn btn-primary">Opt 2</button>
+    </div>
 
     <!-- <h1 class="title"><?= __('Destaques') ?></h1>
     <div class="row h-100 w-100">
