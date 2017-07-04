@@ -16,6 +16,10 @@ class PagesController extends AppController
      *
      * @return \Cake\Network\Response|null
      */
+    public function home(){
+        
+    }
+
     public function index()
     {
         $this->paginate = [

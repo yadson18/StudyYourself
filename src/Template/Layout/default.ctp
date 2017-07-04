@@ -38,7 +38,7 @@
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <?php if($this->templatePath != 'Users'): ?>
+    <?php if($this->templatePath != 'Users' && $this->templatePath != 'Pages'): ?>
         <nav id="acessible-nav" class="navbar navbar-default">
             <div class="acessible-block col-md-4 col-sm-12 col-xm-12">
                 <ul id="atalho-1-2">
