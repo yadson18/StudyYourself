@@ -30,15 +30,15 @@
             </li>
         </ul>   
     </nav>
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal fade" id="modal" role="dialog" aria-labelledby="modalLabel">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">ENTRE</a></li>
-              <li class="breadcrumb-item active">CADASTRE-SE</li>
-            </ol>
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="">ENTRE</a></li>
+              <li class="breadcrumb-item active"><a href="" disabled="disabled">CADASTRE-SE</a></li>
+            </ul>
           </div>
           <div class="modal-body">
           </div>

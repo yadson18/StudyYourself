@@ -281,10 +281,10 @@ select.input-lg.form-control{
 	padding: 20px 9% 0 0;
 }
 #nav-right ul li,
-.modal-header ol li{
+.modal-header ul li{
 	display: inline;
 }
-.modal-header ol.breadcrumb{
+.modal-header ul.breadcrumb{
 	padding: 2px 2px;
     margin-bottom: 0; 
     list-style: none;
@@ -324,7 +324,7 @@ select.input-lg.form-control{
 	border-color: #6455FD;
 }
 #nav-right ul li a:hover, 
-.modal-header ol li a:hover{
+.modal-header ul li a:hover{
 	text-decoration: none;
 }
 .modal-header{
