@@ -22,10 +22,10 @@
 <div id="home-content">
     <nav id="nav-right">
         <ul>
-            <li>
+            <li class="entrar">
                 <a href="" data-toggle="modal" data-target="#modal" data-whatever="Entrar">Entrar</a>
             </li>
-            <li>
+            <li class="registrar">
                 <a href="" data-toggle="modal" data-target="#modal" data-whatever="Criar conta">Criar conta</a>
             </li>
         </ul>   
@@ -35,9 +35,9 @@
         <div class="modal-content col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <ul class="breadcrumb">
-              <li class="breadcrumb-item"><a href="">ENTRE</a></li>
-              <li class="breadcrumb-item active"><a href="" disabled="disabled">CADASTRE-SE</a></li>
+            <ul class="breadcrumb nav nav-pills">
+              <li class="breadcrumb-item entrar"><a href="#">ENTRE</a></li>
+              <li class="breadcrumb-item registrar"><a href="#">CADASTRE-SE</a></li>
             </ul>
           </div>
           <div class="modal-body">
@@ -62,28 +62,3 @@
         </div>
     </div>
 </div>
-
-    
-<script type="text/javascript">
-    function getTemplate(templateUrl, element){
-        $.get(templateUrl, function(data, status){
-            $(element).append(data);
-        });
-    }
-    $('#modal').on('show.bs.modal', function (event) {
-        $(".modal-body").empty();
-        var button = $(event.relatedTarget); // Button that triggered the modal
-        var recipient = button.data('whatever'); // Extract info from data-* attributes
-        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-        var modal = $(this);
-        modal.find('.modal-body input').val(recipient);
-
-        if(recipient === "Entrar"){
-            getTemplate("/Users/login", ".modal-body");
-        }
-        else{
-            getTemplate("/Users/add", ".modal-body");
-        }
-    });
-</script>

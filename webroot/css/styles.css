@@ -18,15 +18,6 @@
 label{
 	display: block;
 }
-.size{
-	font-size: 4em;
-	margin: 0;
-}
-.add-title{
-	text-align: center;
-	position: relative;
-	top: 20%;
-}
 .material-title{
 	position: relative;
 	top: 45%;
@@ -347,4 +338,38 @@ select.input-lg.form-control{
 .modal-header .breadcrumb>li+li:before{
 	content: "|";
 	padding: 5px 4px 5px 0px;
+}
+.breadcrumb.nav li a{
+	display: inline;
+} 
+.breadcrumb.nav-pills > li{
+	float: none;
+}
+.mais-avaliados-header{
+	height: 66px;
+}
+.mais-avaliados-header h4{
+	display: inline-block;
+	font-size: 1.1em;
+	margin-top: 39px;
+}
+.mais-avaliados-header div{
+	float: right; 
+	margin-top: 11px;
+	display: inline-block;
+	text-align: center;
+}
+.mais-avaliados-header div a p{
+	font-size: 0.8em;
+}
+.mais-avaliados-header div a i{
+	font-size: 2em;
+}
+.content-box{
+	height: 300px;
+}
+.content-box div.col-md-7,
+.content-box div.col-md-7 div.col-md-12{
+	padding-left: 0;
+	padding-right: 0;
 }

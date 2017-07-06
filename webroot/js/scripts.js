@@ -1,18 +1,51 @@
 $(document).ready(function(){
-	/*$("ul.ct-ignition").attr("tabindex", "1");
-	var index = 2;
-	var elements = $("ul.ct-ignition li");
-	for(var i = 0; i < elements.length; i++){
-		console.log(elements[i]['className'].split(/\s+/)[1]);
-		$("." + elements[i]['className'].split(/\s+/)[1]).attr("tabindex", index++);
-	}*/
+	var template;
 
-	// Define o tamanho inicial da janela de pré-vizualização dos materiais, baseado na largura da janela.
-	$(".content-size").css({"height": ($('.material-content').width() - 20) + "px"});
+    $('#modal').on('show.bs.modal', function(event){
+    	var clickedLink;
 
-	// Muda o tamanho da janela de pré-vizualização dos materiais, quando a largura da janela mudar.
-	$(window).resize(function(){
-		$(".content-size").css("height", ($('.material-content').width() - 20) + "px");
+        clickedLink = $(event.relatedTarget).data('whatever');
+        if(clickedLink === "Entrar"){
+        	template = "login";
+
+        	disableLink($(".breadcrumb .entrar"));
+        	enableLink($(".breadcrumb .registrar"));
+			showModal("/Users/login", event);
+        }
+        else{
+        	template = "registro";
+
+        	disableLink($(".breadcrumb .registrar"));
+        	enableLink($(".breadcrumb .entrar"));
+        	showModal("/Users/add", event);
+        }
+    });	
+
+	$("#modal ul.breadcrumb li a").on("click", function(event){
+		if($(this).text() === "ENTRE"){
+			if(template === "login"){
+				event.preventDefault();
+			}
+			else{	
+				template = "login";
+		        
+		        disableLink($(".breadcrumb .entrar"));
+        		enableLink($(".breadcrumb .registrar"));
+		        showModal("/Users/login", event);
+			}
+		}
+		else{
+			if(template === "registro"){
+				event.preventDefault();
+			}
+			else{
+				template = "registro";
+		        
+		        disableLink($(".breadcrumb .registrar"));
+        		enableLink($(".breadcrumb .entrar"));
+		        showModal("/Users/add", event);
+			}
+		}
 	});
 
 	$(".material-content").on("mouseover", function(){
@@ -21,6 +54,33 @@ $(document).ready(function(){
 	$(".material-content").on("mouseout", function(){
 		$(this).toggleClass("material-content-mouseOver");
 	});
+
+	function enableLink(element){
+    	element.removeClass("disabled");
+    }
+
+    function disableLink(element){
+    	element.addClass("disabled");
+    }
+
+    function showModal(ajaxSrc, event){
+    	var button, recipient, modal;
+
+    	$(".modal-body").empty();
+    	button = $(event.relatedTarget);
+		recipient = button.data('whatever');
+
+		modal = $("#modal");
+		modal.find('.modal-body input').val(recipient);
+
+		getTemplate(ajaxSrc, ".modal-body");
+    }
+
+	function getTemplate(templateUrl, element){
+        $.get(templateUrl, function(data, status){
+            $(element).append(data);
+        });
+    }
 
 	function updateOptionsCategories(select_id, options){
 		$(select_id).empty();

@@ -1,33 +1,61 @@
 <div class="content">
-    <h1 class="title"><?= __('Minhas Aulas') ?></h1>
     <div class="row">
-        <?php if($role == 'colaborador'): ?>
-            <div class="col-md-3 material col-sm-6 col-xs-8 col-md-offset-0 col-sm-offset-0 col-xs-offset-2">
-                <div class="content-size">
-                    <h1 class="add-title">
-                        <a id="addNew" class="fa fa-plus-square size" href="/materials/add" tabindex="8"></a>
-                    </h1>   
-                </div>   
+        <div class="col-md-10 col-md-offset-1" style="border: solid 1px">
+            <div class="col-md-12 mais-avaliados-header">
+                <h4>Mais avaliados</h4>
+                <div>
+                    <a href="/materials/add">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <p>Adicionar conteúdo</p>
+                    </a>
+                </div>
             </div>
-        <?php endif; ?>
-        <?php foreach ($materials as $i => $material): ?>
-            <a title="<?= $material->title ?>" href="/materials/view/<?= $material->id ?>" tabindex="<?= ($i + 9) ?>">
-                <?php foreach ($material->pages as $page): ?>
-                    <div class="col-md-3 material col-sm-6 col-xs-8 col-md-offset-0 col-sm-offset-0 col-xs-offset-2">
-                        <div class="material-content content-size">
-                            <!-- <h1 class="hidden"><?= $material->title ?></h1> -->
-                            <h1 class="material-title">
-                                <?php if(strlen($material->title) > 17): ?>
-                                    <?= substr($material->title, 0, 17) . "..." ?>
-                                <?php else: ?>
-                                    <?= $material->title ?>
-                                <?php endif; ?>
-                            </h1>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </a>
-        <?php endforeach; ?>
-        
+            <div class="col-md-12 content-box">
+                <div class="col-md-7">
+                    <?php foreach($materials as $key => $material): ?>
+                        <?php if($key === 0): ?>
+                            <a title="<?= $material->title ?>" href="/materials/view/<?= $material->id ?>">
+                                <?php foreach ($material->pages as $page): ?>
+                                    <div class="col-md-12 material col-sm-12 col-xs-12">
+                                        <div class="material-content content-size">
+                                            <!-- <h1 class="hidden"><?= $material->title ?></h1> -->
+                                            <h1 class="material-title">
+                                                <?php if(strlen($material->title) > 17): ?>
+                                                    <?= substr($material->title, 0, 17) . "..." ?>
+                                                <?php else: ?>
+                                                    <?= $material->title ?>
+                                                <?php endif; ?>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </a>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </div>
+                <div class="col-md-5">
+                    <?php foreach($materials as $key => $material): ?>
+                        <?php if($key > 0 || $key < 4): ?>
+                            <a title="<?= $material->title ?>" href="/materials/view/<?= $material->id ?>">
+                                <?php foreach ($material->pages as $page): ?>
+                                    <div class="col-md-12 material col-sm-12 col-xs-12">
+                                        <div class="material-content content-size">
+                                            <!-- <h1 class="hidden"><?= $material->title ?></h1> -->
+                                            <h1 class="material-title">
+                                                <?php if(strlen($material->title) > 17): ?>
+                                                    <?= substr($material->title, 0, 17) . "..." ?>
+                                                <?php else: ?>
+                                                    <?= $material->title ?>
+                                                <?php endif; ?>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </a>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
