@@ -109,10 +109,8 @@ select.input-lg.form-control{
 	margin: auto;
 	margin-left: 23.33%;
 }
-#box{
-	background-color: #2e8ece;
-	padding: 40px 12px 8px 12px;
-	border-radius: 4px;
+#box input, #box select{
+	margin-bottom: 20px;
 }
 #box input,
 #box select,
@@ -423,4 +421,8 @@ select.input-lg.form-control{
 }
 #home-content #modal.modal.fade.in{
 	padding-right: 0;
+}
+.content-page #editor-box{
+	position: relative;
+	top: 20px;
 }
