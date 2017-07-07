@@ -37,6 +37,20 @@ label{
 	padding: 1px 10px 5px 10px;
 	text-align: center;
 }
+.big-element{
+	height: 270px;
+
+}
+.small-element{
+	height: 80px;
+}
+.big-element,
+.small-element{
+	background-color: white;
+}
+.small-element h1{
+	top: 32%;
+}
 .material-content-mouseOver{
 	transition: 0.5s;
 	background-color: rgba(0,0,0,0.5);
@@ -141,6 +155,7 @@ select.input-lg.form-control{
 	top: 10px;
 }
 #acessible-nav ul li a{
+	font-size: 0.9em;
 	padding: 10px 2px 10px 2px;
 	text-decoration: none;
 	color: black;
@@ -192,11 +207,14 @@ select.input-lg.form-control{
 	padding-top: 16px;
 	padding-bottom: 16px;
 	color: white;
-	font-size: 1.1em;
+	font-size: 1em;
 	font-family: sans-serif;
 }
 #main-menu{
 	background-color: #3981d5;
+}
+#main-menu .navbar-toggle{
+	background-color: white;
 }
 #main-menu .border{
 	border-left: solid 1px #4158C8;
@@ -290,7 +308,7 @@ select.input-lg.form-control{
 	
 }
 #inclined-div{
-	height: 250px;
+	height: 30%;
 	width: 120%;
 	background-color: white;
 	position: fixed;
@@ -365,11 +383,23 @@ select.input-lg.form-control{
 .mais-avaliados-header div a i{
 	font-size: 2em;
 }
-.content-box{
-	height: 300px;
+.content-box div.col-md-5,
+.content-box div.col-sm-5{
+	padding-right: 0;
+}
+.content-box div.col-md-5 .material{
+	padding-bottom: 0;
 }
 .content-box div.col-md-7,
-.content-box div.col-md-7 div.col-md-12{
+.content-box div.col-md-7 div.col-md-12,
+.content-box div.col-md-5 div.col-md-12{
 	padding-left: 0;
 	padding-right: 0;
+}
+#center-itens div img{
+	width: 100%;
+}
+.itens-box{
+	background-color: #fafafa;
+    box-shadow: 0px 0px 1px 1px #afafaf;
 }

@@ -22,7 +22,7 @@
     <title>
         <?= $this->fetch('title') ?>
     </title>
-    <?= $this->Html->meta('icon') ?>
+    <link rel="icon" type="image/ico" href="/img/logo-icone.ico" style="background-color: transparent"/>
 
     <?= $this->Html->css('sandbox.css') ?>
     <?= $this->Html->css('content-tools.css') ?>
@@ -43,10 +43,10 @@
             <div class="acessible-block col-md-4 col-sm-12 col-xm-12">
                 <ul id="atalho-1-2">
                     <li>
-                        <a href="">Ir para o conteúdo (ALT + 1)</a>
+                        <a href="">Ir ao conteúdo (ALT + 1)</a>
                     </li>
                     <li>
-                        <a href="">Ir para o menu (ALT + 2)</a>
+                        <a href="">Ir ao menu (ALT + 2)</a>
                     </li>
                 </ul>
             </div>

@@ -79,7 +79,7 @@ class AppController extends Controller
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'display', 'home', 'login']);
+        $this->Auth->allow(['display', 'home']);
     }
 
     public function isAuthorized($user)

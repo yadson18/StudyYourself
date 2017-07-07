@@ -45,9 +45,9 @@
         </div>
       </div>
     </div>
-    <div id="center-itens" class="col-md-6 col-md-offset-3">
+    <div id="center-itens" class="col-md-6 col-md-offset-3 col-sm-6">
         <div>
-            <img src="/img/logo-1.png">
+            <img src="/img/logo-banner.png">
         </div>
         <div>
             <button class="btn btn-default">Comece agora</button>
