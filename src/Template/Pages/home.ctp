@@ -32,7 +32,7 @@
     </nav>
     <div class="modal fade" id="modal" role="dialog" aria-labelledby="modalLabel">
       <div class="modal-dialog" role="document">
-        <div class="modal-content col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+        <div class="modal-content col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <ul class="breadcrumb nav nav-pills">
@@ -45,20 +45,20 @@
         </div>
       </div>
     </div>
-    <div id="center-itens" class="col-md-6 col-md-offset-3 col-sm-6">
+    <div id="center-itens" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
         <div>
             <img src="/img/logo-banner.png">
         </div>
         <div>
-            <button class="btn btn-default">Comece agora</button>
+            <button class="btn">Comece agora</button>
             <p>
                 No estude você mesmo, você se prepara para o vestibular oua estuda conteúdos variados de forma gratuita e eficiente, experimente!
             </p>
         </div>
     </div>
     <div id="inclined-div">
-        <div id="tablet-img">
-            <img src="a">
+        <div id="notebook-img">
+            <img src="/img/notebook-footer.png">
         </div>
     </div>
 </div>

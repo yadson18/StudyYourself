@@ -45,7 +45,7 @@ class AppController extends Controller
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
             'loginRedirect' => [
-                'controller' => 'Materials',
+                'Controller' => 'Materials',
                 'action' => 'index'
             ],
             'logoutRedirect' => '/', [
@@ -79,7 +79,7 @@ class AppController extends Controller
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['display', 'home']);
+        $this->Auth->allow(['display', 'home', 'index']);
     }
 
     public function isAuthorized($user)

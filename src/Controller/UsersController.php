@@ -57,8 +57,10 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('Não foi possível cadastrar o usuário, por favor, tente novamente.'));
         }
-        $this->set(compact('user'));
-        $this->set('_serialize', ['user']);
+        $role = $this->Auth->user('role');
+
+        $this->set(compact('user', 'role'));
+        $this->set('_serialize', ['user', 'role']);
     }
 
     /**

@@ -345,13 +345,21 @@ select.input-lg.form-control{
 	font-size: 1.2em;
 	color: white;
 	font-family: sans-serif;
+	padding: 5px;
 }
-#tablet-img{
-	width: 85%;
-	transform: rotate(3deg);
-	text-align: center;
-	position: fixed;
-	bottom: 40px;
+#notebook-img{
+	height: 100%;
+    width: 85%;
+    transform: rotate(3deg);
+    text-align: center;
+    position: fixed;
+    bottom: 207px;
+}
+#notebook-img img{
+	width: 500px; 
+	min-width: 380px; 
+	position: relative; 
+	top: 120px;
 }
 .modal-header .breadcrumb>li+li:before{
 	content: "|";
@@ -396,10 +404,23 @@ select.input-lg.form-control{
 	padding-left: 0;
 	padding-right: 0;
 }
+#center-itens{
+	position: relative;
+    
+}
 #center-itens div img{
 	width: 100%;
+}
+#center-itens div button{
+	margin-top: 8px;
+}
+#center-itens div p{
+	margin-top: -10px;
 }
 .itens-box{
 	background-color: #fafafa;
     box-shadow: 0px 0px 1px 1px #afafaf;
+}
+#home-content #modal.modal.fade.in{
+	padding-right: 0;
 }
